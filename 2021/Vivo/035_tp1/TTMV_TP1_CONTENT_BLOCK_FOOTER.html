@@ -1,0 +1,71 @@
+%%[
+   
+   SET @validade = Lookup('ent.catalogoProdutos','Validade','Prod','Mov','Tipo','Totalizacao','Prioridade','1')
+   SET @validadeformatada = FormatDate(@validade,"dd/mm/yyyy")
+
+]%%
+<!--Início Footer-->
+   <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#FFFFFF">
+    <tr>
+     <td style="line-height:0px; font-size:0px; margin:0px;">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+       <tr>
+        <td>
+         <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+           <td align="center" style="line-height:0px; font-size:0px; margin:0px;"><img src="https://www.vivo.com.br/content/dam/crm/junho21/totalizacao_movel/_pixel.png" width="15" height="35" alt=""></td>
+          </tr>
+         </table>
+         <table width="86%" border="0" cellspacing="0" cellpadding="0" align="center">
+          <tr>
+           <td align="left" style="line-height:0px; font-size:0px; margin:0px;"><img src="https://www.vivo.com.br/content/dam/crm/junho21/totalizacao_movel/linkedin.png" width="204" height="30" alt="Siga a gente no Linkedin"></td>
+          </tr>
+         </table>
+         <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+           <td align="center" style="line-height:0px; font-size:0px; margin:0px;"><img src="https://www.vivo.com.br/content/dam/crm/junho21/totalizacao_movel/_pixel.png" width="20" height="30" alt=""></td>
+          </tr>
+         </table>
+         <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+          <tr>
+           <td align="center" style="line-height:0px; font-size:0px; margin:0px;"><img src="https://www.vivo.com.br/content/dam/crm/junho21/totalizacao_movel/line.png" width="520" height="1" alt="" class="imageMobile"></td>
+          </tr>
+         </table>
+         <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+           <td align="center" style="line-height:0px; font-size:0px; margin:0px;"><img src="https://www.vivo.com.br/content/dam/crm/junho21/totalizacao_movel/_pixel.png" width="20" height="30" alt=""></td>
+          </tr>
+         </table>
+         <table width="87%" border="0" cellspacing="0" cellpadding="0" align="center">
+          <tr>
+           <td align="left" style="line-height:0px; font-size:0px; margin:0px;"><img src="https://www.vivo.com.br/content/dam/crm/junho21/totalizacao_movel/telefonica.png" width="120" height="29" alt="Telefônica."></td>
+           <td align="center" style="line-height:0px; font-size:0px; margin:0px;"><img src="https://www.vivo.com.br/content/dam/crm/junho21/totalizacao_movel/_pixel.png" width="1" height="20" alt=""></td>
+           <td align="right" style="line-height:0px; font-size:0px; margin:0px;"><img src="https://www.vivo.com.br/content/dam/crm/junho21/totalizacao_movel/4_5_g.png" width="140" height="29" alt="4.5G + Fibra"></td>
+          </tr>
+         </table>
+         <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+           <td align="center" style="line-height:0px; font-size:0px; margin:0px;"><img src="https://www.vivo.com.br/content/dam/crm/junho21/totalizacao_movel/_pixel.png" width="15" height="25" alt=""></td>
+          </tr>
+         </table>
+           <table width="86%" border="0" cellspacing="0" cellpadding="0" align="center" class="to90">
+          <tr>
+           <td align="left" style="font-family: Trebuchet MS, Verdana, Geneva, sans-serif; font-size:11px; line-height:14px; color:#8F8F8F;-ms-text-size-adjust:none;-webkit-text-size-adjust:none; text-align:justify;mso-line-height-rule: exactly;">Benefício PagSeguro: O prazo de entrega é de até 30 dias após a solicitação. Maquininha enviada de acordo com a disponibilidade. Algumas condições comerciais de clientes que já possuem PagSeguro inviabilizam a solicitação do benefício via Vivo.<br><br>
+            O bônus de 10GB é concedido apenas para clientes Vivo Internet e Vivo Fibra, que contratarem um plano pós-pago. Após a contratação, o bônus é liberado em seu plano. Ofertas válidas para clientes pessoa jurídica, no CNPJ, com adesão até %%=v(@validadeformatada)=%%. Valores válidos para compra do pacote de internet + linha fixa no plano ilimitado nacional + linha de pós pago móvel smart empresas. A velocidade anunciada de acesso e tráfego na internet é a nominal máxima, podendo sofrer variações decorrentes de fatores externos. Serviço sujeito a disponibilidade e viabilidade técnica na região e no imóvel de instalação. A velocidade instantânea mínima da Vivo Internet Empresas é de 40% da velocidade máxima contratada, nos termos da Resolução 574/2011 da Anatel. O Plano Smart Empresas possui ligações ilimitadas para fixo e móvel nacional com código 15, pacote de dados com opção de compartilhamento e um portfólio de serviços digitais de acordo com o plano contratado. Ao consumir o total da franquia de dados contratada no mês, a utilização de dados será automaticamente reduzida para 64 kbps. Oferta sujeita à análise de crédito. Serviço de Atendimento ao Consumidor: 103 15. Pessoas com necessidades especiais de fala ou audição: 142. Para mais informações, consulte o regulamento em www.vivo.com.br. Internet exclusiva para os apps de produtividade: Evernote, Outlook APP e Microsoft 365 Business Basic
+            <br><br>
+            Não quer mais receber nossas comunicações? <a href="%%unsub_center_url%%" style="color: #8B11A9;"><strong>Descadastre-se aqui</strong></a>.
+           </td>
+          </tr>
+         </table>
+         <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+           <td align="center" style="line-height:0px; font-size:0px; margin:0px;"><img src="https://www.vivo.com.br/content/dam/crm/junho21/totalizacao_movel/_pixel.png" width="15" height="20" alt=""></td>
+          </tr>
+         </table>
+        </td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+   <!--Final Footer-->

@@ -1,0 +1,238 @@
+%%[
+   SET @qtd = '3'
+   SET @produto = 'Mov'
+   SET @tipo = 'Totalizacao'
+   
+   SET @linkdestaque = Lookup('ent.catalogoProdutos','URLDestaque','Prod','Mov','Tipo','Totalizacao','Prioridade','1')
+   SET @UTMCAMP = concat('utm_campaign=', emailName_)
+   SET @UTMC00 = concat('c_00=', emailName_)
+   SET @URLdestaque = Replace(Replace(@linkdestaque, 'utm_campaign=', @UTMCAMP), 'c_00=', @UTMC00)
+   
+    SET @linkmaisplanos = Lookup('ent.catalogoProdutos','URL_Mais_opcoes_plano','Prod','Mov','Tipo','Totalizacao','Prioridade','1')
+   SET @URLmaisplanos = Replace(Replace(@linkmaisplanos, 'utm_campaign=', @UTMCAMP), 'c_00=', @UTMC00)
+]%%
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width" />
+<title>Vivo</title>
+<style type="text/css">
+table
+{
+    margin: 0px auto !important;
+    border-collapse: collapse;
+    mso-table-lspace: 0pt;
+    mso-table-rspace: 0pt;
+}
+
+table td,  table tr
+{
+    border-collapse: collapse;
+    mso-table-lspace: 0pt;
+    mso-table-rspace: 0pt;
+}
+ @media screen and (max-width: 600px) {
+
+table.deviceWidth
+{
+    width: 100% !important;
+    min-width: 100% !important;
+}
+
+table.deviceWidth td
+{
+    display: block !important;
+    clear: both !important;
+    width: 100% !important;
+    text-align: center !important;
+    padding: 0px !important;
+    min-width: 100% !important;
+    margin: 0 auto !important;
+}
+
+table.tableType
+{
+    min-width:55%;
+    width: 55% !important;
+    margin: 0 auto !important;
+}
+
+table.tableType td
+{
+    display: table-cell !important;
+    min-width: auto !important;
+    width: auto !important;
+}
+  
+table.tableTypeHeader
+{
+    min-width:40%;
+    width: 40% !important;
+    margin: 0 auto !important;
+}
+
+table.tableTypeHeader td
+{
+    display: table-cell !important;
+    min-width: auto !important;
+    width: auto !important;
+}
+
+table.tableTypeFooter
+{
+    min-width:90%;
+    width: 90% !important;
+    margin: 0 auto !important;
+}
+
+table.tableTypeFooter td
+{
+    display: table-cell !important;
+    min-width: auto !important;
+    width: auto !important;
+}
+
+img.imageMobile
+{
+    width: 100% !important;
+    height: auto !important;
+}
+
+.txtMob {font-size: 50px!important;}
+  
+*[class].hide {
+ width: 0px !important;
+ height: 0px !important;
+ display: none !important;
+}
+
+*[class].hide_desktop {
+  display: table !important;
+  float: none !important;
+  width: 100% !important;
+  overflow: visible !important;
+  height: auto !important;
+}
+
+*.hideThis { display: none !important; }
+
+*.to90 { width: 50%; }
+}
+</style>
+</head>
+<body>
+<div style="display:none;font-size:1px;color:#333333;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
+
+</div>
+<div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#000000" style="-ms-text-size-adjust:none;-webkit-text-size-adjust:none;">Caso não  esteja visualizando este e-mail, <a href="%%view_email_url%%"><font color="#000000"><u>clique aqui</u></font></a>.</font></div>
+<table width="600" border="0" align="center" cellpadding="0" cellspacing="0" class="deviceWidth" bgcolor="#fcc8ff">
+   <tr>
+     <td valign="top" style="line-height:0px; font-size:0px; margin:0px;">
+       
+   <!--Início Header VIVO EMPRESAS-->
+   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+     <td align="center" style="line-height:0px; font-size:0px; margin:0px;"><img src="https://www.vivo.com.br/content/dam/crm/junho21/totalizacao_movel/_pixel.png" width="15" height="24" alt=""></td>
+    </tr>
+   </table>
+   <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+    <tr>
+     <td align="center" style="line-height:0px; font-size:0px; margin:0px;"><img src="https://www.vivo.com.br/content/dam/crm/junho21/totalizacao_movel/vivo_empresas_roxo.png" width="130" height="53" alt="Vivo Empresas"></td>
+    </tr>
+   </table>
+   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+     <td align="center" style="line-height:0px; font-size:0px; margin:0px;"><img src="https://www.vivo.com.br/content/dam/crm/junho21/totalizacao_movel/_pixel.png" width="15" height="20" alt=""></td>
+    </tr>
+   </table>
+   <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#ffffff">
+    <tr>
+     <td>
+         <!--Início Header-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+       <tr>
+        <td align="center" style="line-height:0px; font-size:0px; margin:0px;"><img src="https://www.vivo.com.br/content/dam/crm/junho21/totalizacao_movel/_pixel.png" width="30" height="10" alt=""></td>
+          <td>
+         <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" class="to90">
+          <tr>
+           <td align="left" style="font-family: Trebuchet MS, Verdana, Geneva, sans-serif; font-size:20px; line-height:22px; color:#660099;-ms-text-size-adjust:none;-webkit-text-size-adjust:none; text-align:left!important;mso-line-height-rule: exactly;">
+            <strong><span style="color: #FF6DFF;">Não perca tempo!</span><br>Planos de celular <br>
+            a partir de R$39,99/mês.</strong>
+           </td>
+          </tr>
+          <tr>
+             <td align="center" style="line-height:0px; font-size:0px; margin:0px;"><img src="https://www.vivo.com.br/content/dam/crm/junho21/totalizacao_movel/_pixel.png" width="15" height="2" alt=""></td>
+          </tr>
+          <tr>
+             <td align="center" style="line-height:0px; font-size:0px; margin:0px;"><img src="https://www.vivo.com.br/content/dam/crm/junho21/totalizacao_movel/_pixel.png" width="15" height="5" alt=""></td>
+          </tr>
+          <tr>
+           <td align="left" style="line-height:0px; font-size:0px; margin:0px;"><a href="%%=RedirectTo(@URLDestaque)=%%" target="_blank"><img src="https://www.vivo.com.br/content/dam/crm/junho21/totalizacao_movel/aproveite.png" width="190" height="40" alt="Aproveite!"></a></td>
+          </tr>
+         </table>
+        </td>
+        <td align="center" style="line-height:0px; font-size:0px; margin:0px;"><img src="https://www.vivo.com.br/content/dam/crm/junho21/totalizacao_movel/_pixel.png" width="2" height="20" alt=""></td>
+        <td align="right" style="line-height:0px; font-size:0px; margin:0px;"><img src="https://www.vivo.com.br/content/dam/crm/junho21/totalizacao_movel/header_5.gif" width="360" height="240" alt=""></td>
+       </tr>
+      </table> 
+     </td>
+    </tr>
+   </table>
+   <!--Final Header-->
+   
+   
+   <!--Início Vitrine-->
+%%=ContentBlockById("50320")=%%
+   <!--Final Vitrine-->
+   
+   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+     <td align="center" style="line-height:0px; font-size:0px; margin:0px;"><img src="https://www.vivo.com.br/content/dam/crm/junho21/totalizacao_movel/_pixel.png" width="15" height="35" alt=""></td>
+    </tr>
+   </table>
+   <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+    <tr>
+      <td align="center" style="font-family: Trebuchet MS, Verdana, Geneva, sans-serif; font-size:18px; line-height:22px; color:#660099;-ms-text-size-adjust:none;-webkit-text-size-adjust:none; text-align:center;mso-line-height-rule: exactly;">
+      <strong>Quer ver mais opções de plano?</strong>
+     </td>
+    </tr>
+   </table>
+   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+     <td align="center" style="line-height:0px; font-size:0px; margin:0px;"><img src="https://www.vivo.com.br/content/dam/crm/junho21/totalizacao_movel/_pixel.png" width="15" height="15" alt=""></td>
+    </tr>
+   </table>
+   <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+    <tr>
+     <td align="center" style="line-height:0px; font-size:0px; margin:0px;"><a href="%%=RedirectTo(@URLmaisplanos)=%%" target="_blank"><img src="https://www.vivo.com.br/content/dam/crm/junho21/totalizacao_movel/clique_lilas.png" width="180" height="40" alt=""></a></td>
+    </tr>
+   </table>
+   
+   <!--Início Banners-->
+   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+     <td align="center" style="line-height:0px; font-size:0px; margin:0px;"><img src="https://www.vivo.com.br/content/dam/crm/junho21/totalizacao_movel/_pixel.png" width="15" height="30" alt=""></td>
+    </tr>
+   </table>
+   <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+    <tr>
+     <td align="center" style="line-height:0px; font-size:0px; margin:0px;"><img src="https://www.vivo.com.br/content/dam/crm/junho21/totalizacao_movel/line_rosa.png" width="520" height="1" alt="" class="imageMobile"></td>
+    </tr>
+    <tr>
+     <td align="center" style="line-height:0px; font-size:0px; margin:0px;"><a href="https://www.vivo.com.br/para-empresas/ofertas/smart-empresas/movel-fibra-empresas?utm_source=mktcloud&utm_medium=emailmkt&utm_campaign=%%emailName_%%_vivo_b2b_movel_pos-pago_movel_oferta&utm_content=_PagSeguro__&utm_term=_c_campanha=&c_segmento=b2&c_categoria=c2&c_subcategoria=d6&c_tipo-midia=e6&c_oferta=PagSeguro&c_plataforma=f11" target="_blank"><img src="https://www.vivo.com.br/content/dam/crm/junho21/totalizacao_movel/oferta_5.png" width="600" height="249" alt="Pagseguro" class="imageMobile"></a></td>
+    </tr>
+   </table>
+   <!--Final Banners-->
+   
+   <!--Início Footer-->
+%%=ContentBlockById("50323")=%%
+   <!--Final Footer-->
+  </td>
+ </tr>
+</table>
+<custom name="opencounter" type="tracking"/>
+</body>
+</html>

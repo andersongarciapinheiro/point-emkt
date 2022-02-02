@@ -1,0 +1,956 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>02_e_mail_v4
+  </title>
+
+</head>
+
+<body style="-moz-box-sizing: border-box; -ms-text-size-adjust: 100%; -webkit-box-sizing: border-box; -webkit-text-size-adjust: 100%; background: #ffffff !important; box-sizing: border-box; color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; min-width: 100%; padding: 0; text-align: left; width: 100% !important;">
+  <style>
+    @media only screen {
+      html {
+        min-height: 100%;
+        background: #f3f3f3;
+      }
+    }
+    
+    @media only screen and (max-width: 596px) {
+      .small-float-center {
+        margin: 0 auto !important;
+        float: none !important;
+        text-align: center !important;
+      }
+      .small-text-center {
+        text-align: center !important;
+      }
+      .small-text-left {
+        text-align: left !important;
+      }
+      .small-text-right {
+        text-align: right !important;
+      }
+    }
+    
+    @media only screen and (max-width: 596px) {
+      .hide-for-large {
+        display: block !important;
+        width: auto !important;
+        overflow: visible !important;
+        max-height: none !important;
+        font-size: inherit !important;
+        line-height: inherit !important;
+      }
+    }
+    
+    @media only screen and (max-width: 596px) {
+      table.body table.container .hide-for-large,
+      table.body table.container .row.hide-for-large {
+        display: table !important;
+        width: 100% !important;
+      }
+    }
+    
+    @media only screen and (max-width: 596px) {
+      table.body table.container .callout-inner.hide-for-large {
+        display: table-cell !important;
+        width: 100% !important;
+      }
+    }
+    
+    @media only screen and (max-width: 596px) {
+      table.body table.container .show-for-large {
+        display: none !important;
+        width: 0;
+        mso-hide: all;
+        overflow: hidden;
+      }
+    }
+    
+    @media only screen and (max-width: 596px) {
+      table.body img {
+        width: auto;
+        height: auto;
+      }
+      table.body center {
+        min-width: 0 !important;
+      }
+      table.body .container {
+        width: 95% !important;
+      }
+      table.body .columns,
+      table.body .column {
+        height: auto !important;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+      }
+      table.body .columns .column,
+      table.body .columns .columns,
+      table.body .column .column,
+      table.body .column .columns {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+      table.body .collapse .columns,
+      table.body .collapse .column {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+      td.small-1,
+      th.small-1 {
+        display: inline-block !important;
+        width: 8.33333% !important;
+      }
+      td.small-2,
+      th.small-2 {
+        display: inline-block !important;
+        width: 16.66667% !important;
+      }
+      td.small-3,
+      th.small-3 {
+        display: inline-block !important;
+        width: 25% !important;
+      }
+      td.small-4,
+      th.small-4 {
+        display: inline-block !important;
+        width: 33.33333% !important;
+      }
+      td.small-5,
+      th.small-5 {
+        display: inline-block !important;
+        width: 41.66667% !important;
+      }
+      td.small-6,
+      th.small-6 {
+        display: inline-block !important;
+        width: 50% !important;
+      }
+      td.small-7,
+      th.small-7 {
+        display: inline-block !important;
+        width: 58.33333% !important;
+      }
+      td.small-8,
+      th.small-8 {
+        display: inline-block !important;
+        width: 66.66667% !important;
+      }
+      td.small-9,
+      th.small-9 {
+        display: inline-block !important;
+        width: 75% !important;
+      }
+      td.small-10,
+      th.small-10 {
+        display: inline-block !important;
+        width: 83.33333% !important;
+      }
+      td.small-11,
+      th.small-11 {
+        display: inline-block !important;
+        width: 91.66667% !important;
+      }
+      td.small-12,
+      th.small-12 {
+        display: inline-block !important;
+        width: 100% !important;
+      }
+      .columns td.small-12,
+      .column td.small-12,
+      .columns th.small-12,
+      .column th.small-12 {
+        display: block !important;
+        width: 100% !important;
+      }
+      table.body td.small-offset-1,
+      table.body th.small-offset-1 {
+        margin-left: 8.33333% !important;
+      }
+      table.body td.small-offset-2,
+      table.body th.small-offset-2 {
+        margin-left: 16.66667% !important;
+      }
+      table.body td.small-offset-3,
+      table.body th.small-offset-3 {
+        margin-left: 25% !important;
+      }
+      table.body td.small-offset-4,
+      table.body th.small-offset-4 {
+        margin-left: 33.33333% !important;
+      }
+      table.body td.small-offset-5,
+      table.body th.small-offset-5 {
+        margin-left: 41.66667% !important;
+      }
+      table.body td.small-offset-6,
+      table.body th.small-offset-6 {
+        margin-left: 50% !important;
+      }
+      table.body td.small-offset-7,
+      table.body th.small-offset-7 {
+        margin-left: 58.33333% !important;
+      }
+      table.body td.small-offset-8,
+      table.body th.small-offset-8 {
+        margin-left: 66.66667% !important;
+      }
+      table.body td.small-offset-9,
+      table.body th.small-offset-9 {
+        margin-left: 75% !important;
+      }
+      table.body td.small-offset-10,
+      table.body th.small-offset-10 {
+        margin-left: 83.33333% !important;
+      }
+      table.body td.small-offset-11,
+      table.body th.small-offset-11 {
+        margin-left: 91.66667% !important;
+      }
+      table.body table.columns td.expander,
+      table.body table.columns th.expander {
+        display: none !important;
+      }
+      table.body .right-text-pad,
+      table.body .text-pad-right {
+        padding-left: 10px !important;
+      }
+      table.body .left-text-pad,
+      table.body .text-pad-left {
+        padding-right: 10px !important;
+      }
+      table.menu {
+        width: 100% !important;
+      }
+      table.menu td,
+      table.menu th {
+        width: auto !important;
+        display: inline-block !important;
+      }
+      table.menu.vertical td,
+      table.menu.vertical th,
+      table.menu.small-vertical td,
+      table.menu.small-vertical th {
+        display: block !important;
+      }
+      table.menu[align="center"] {
+        width: auto !important;
+      }
+      table.button.small-expand,
+      table.button.small-expanded {
+        width: 100% !important;
+      }
+      table.button.small-expand table,
+      table.button.small-expanded table {
+        width: 100%;
+      }
+      table.button.small-expand table a,
+      table.button.small-expanded table a {
+        text-align: center !important;
+        width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+      table.button.small-expand center,
+      table.button.small-expanded center {
+        min-width: 0;
+      }
+    }
+    
+    @media only screen {
+      html {
+        min-height: 100%;
+        background: #f3f3f3;
+      }
+    }
+    
+    @media only screen and (max-width: 596px) {
+      .small-float-center {
+        margin: 0 auto !important;
+        float: none !important;
+        text-align: center !important;
+      }
+      .small-text-center {
+        text-align: center !important;
+      }
+      .small-text-left {
+        text-align: left !important;
+      }
+      .small-text-right {
+        text-align: right !important;
+      }
+    }
+    
+    @media only screen and (max-width: 596px) {
+      .hide-for-large {
+        display: block !important;
+        width: auto !important;
+        overflow: visible !important;
+        max-height: none !important;
+        font-size: inherit !important;
+        line-height: inherit !important;
+      }
+    }
+    
+    @media only screen and (max-width: 596px) {
+      table.body table.container .hide-for-large,
+      table.body table.container .row.hide-for-large {
+        display: table !important;
+        width: 100% !important;
+      }
+    }
+    
+    @media only screen and (max-width: 596px) {
+      table.body table.container .callout-inner.hide-for-large {
+        display: table-cell !important;
+        width: 100% !important;
+      }
+    }
+    
+    @media only screen and (max-width: 596px) {
+      table.body table.container .show-for-large {
+        display: none !important;
+        width: 0;
+        mso-hide: all;
+        overflow: hidden;
+      }
+    }
+    
+    @media only screen and (max-width: 596px) {
+      table.body img {
+        width: auto;
+        height: auto;
+      }
+      table.body center {
+        min-width: 0 !important;
+      }
+      table.body .container {
+        width: 95% !important;
+      }
+      table.body .columns,
+      table.body .column {
+        height: auto !important;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+      }
+      table.body .columns .column,
+      table.body .columns .columns,
+      table.body .column .column,
+      table.body .column .columns {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+      table.body .collapse .columns,
+      table.body .collapse .column {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+      td.small-1,
+      th.small-1 {
+        display: inline-block !important;
+        width: 8.33333% !important;
+      }
+      td.small-2,
+      th.small-2 {
+        display: inline-block !important;
+        width: 16.66667% !important;
+      }
+      td.small-3,
+      th.small-3 {
+        display: inline-block !important;
+        width: 25% !important;
+      }
+      td.small-4,
+      th.small-4 {
+        display: inline-block !important;
+        width: 33.33333% !important;
+      }
+      td.small-5,
+      th.small-5 {
+        display: inline-block !important;
+        width: 41.66667% !important;
+      }
+      td.small-6,
+      th.small-6 {
+        display: inline-block !important;
+        width: 50% !important;
+      }
+      td.small-7,
+      th.small-7 {
+        display: inline-block !important;
+        width: 58.33333% !important;
+      }
+      td.small-8,
+      th.small-8 {
+        display: inline-block !important;
+        width: 66.66667% !important;
+      }
+      td.small-9,
+      th.small-9 {
+        display: inline-block !important;
+        width: 75% !important;
+      }
+      td.small-10,
+      th.small-10 {
+        display: inline-block !important;
+        width: 83.33333% !important;
+      }
+      td.small-11,
+      th.small-11 {
+        display: inline-block !important;
+        width: 91.66667% !important;
+      }
+      td.small-12,
+      th.small-12 {
+        display: inline-block !important;
+        width: 100% !important;
+      }
+      .columns td.small-12,
+      .column td.small-12,
+      .columns th.small-12,
+      .column th.small-12 {
+        display: block !important;
+        width: 100% !important;
+      }
+      table.body td.small-offset-1,
+      table.body th.small-offset-1 {
+        margin-left: 8.33333% !important;
+        margin-left: 8.33333% !important;
+      }
+      table.body td.small-offset-2,
+      table.body th.small-offset-2 {
+        margin-left: 16.66667% !important;
+        margin-left: 16.66667% !important;
+      }
+      table.body td.small-offset-3,
+      table.body th.small-offset-3 {
+        margin-left: 25% !important;
+        margin-left: 25% !important;
+      }
+      table.body td.small-offset-4,
+      table.body th.small-offset-4 {
+        margin-left: 33.33333% !important;
+        margin-left: 33.33333% !important;
+      }
+      table.body td.small-offset-5,
+      table.body th.small-offset-5 {
+        margin-left: 41.66667% !important;
+        margin-left: 41.66667% !important;
+      }
+      table.body td.small-offset-6,
+      table.body th.small-offset-6 {
+        margin-left: 50% !important;
+        margin-left: 50% !important;
+      }
+      table.body td.small-offset-7,
+      table.body th.small-offset-7 {
+        margin-left: 58.33333% !important;
+        margin-left: 58.33333% !important;
+      }
+      table.body td.small-offset-8,
+      table.body th.small-offset-8 {
+        margin-left: 66.66667% !important;
+        margin-left: 66.66667% !important;
+      }
+      table.body td.small-offset-9,
+      table.body th.small-offset-9 {
+        margin-left: 75% !important;
+        margin-left: 75% !important;
+      }
+      table.body td.small-offset-10,
+      table.body th.small-offset-10 {
+        margin-left: 83.33333% !important;
+        margin-left: 83.33333% !important;
+      }
+      table.body td.small-offset-11,
+      table.body th.small-offset-11 {
+        margin-left: 91.66667% !important;
+        margin-left: 91.66667% !important;
+      }
+      table.body table.columns td.expander,
+      table.body table.columns th.expander {
+        display: none !important;
+      }
+      table.body .right-text-pad,
+      table.body .text-pad-right {
+        padding-left: 10px !important;
+      }
+      table.body .left-text-pad,
+      table.body .text-pad-left {
+        padding-right: 10px !important;
+      }
+      table.menu {
+        width: 100% !important;
+      }
+      table.menu td,
+      table.menu th {
+        width: auto !important;
+        display: inline-block !important;
+      }
+      table.menu.vertical td,
+      table.menu.vertical th,
+      table.menu.small-vertical td,
+      table.menu.small-vertical th {
+        display: block !important;
+      }
+      table.menu[align="center"] {
+        width: auto !important;
+      }
+      table.button.small-expand,
+      table.button.small-expanded {
+        width: 100% !important;
+      }
+      table.button.small-expand table,
+      table.button.small-expanded table {
+        width: 100%;
+      }
+      table.button.small-expand table a,
+      table.button.small-expanded table a {
+        text-align: center !important;
+        width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+      table.button.small-expand center,
+      table.button.small-expanded center {
+        min-width: 0;
+      }
+    }
+  </style>
+  <p style="color: #666666; display: none; font-family: 'Trebuchet MS'; font-size: 1px; font-weight: normal; line-height: 1px; margin: 0; margin-bottom: 0px; max-height: 0px; max-width: 0px; mso-hide: all; opacity: 0; overflow: hidden; padding: 10px; text-align: left;">
+    Veja como em nossos canais de atendimento.
+  </p>
+  <table class="body" data-made-with-foundation="" style="background: #ffffff !important; border-collapse: collapse; border-spacing: 0; color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; height: 100%; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;">
+    <tbody>
+      <tr style="padding: 0; text-align: left; vertical-align: top;">
+        <td class="float-center" align="center" valign="top" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #0a0a0a; float: none; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; hyphens: auto; line-height: 1.3; margin: 0 auto; padding: 0; text-align: center; vertical-align: top; word-wrap: break-word;">
+          <center data-parsed="" style="min-width: 580px; width: 100%;">
+            <table align="center" class="container float-center" style="background: #ffffff; border-collapse: collapse; border-spacing: 0; float: none; margin: 0 auto; padding: 0; text-align: center; vertical-align: top; width: 580px;">
+              <tbody>
+                <tr style="padding: 0; text-align: left; vertical-align: top;">
+                  <td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; hyphens: auto; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">
+                    <table class="row collapse" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;">
+                      <tbody>
+                        <tr style="padding: 0; text-align: left; vertical-align: top;">
+                          <th class="small-12 large-12 columns first last" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 0; padding-right: 0; text-align: left; width: 588px;">
+                            <center style="min-width: 532px; width: 100%;">
+                              <img src="header2.png" class="float-center small-float-center" align="center" alt="Header" style="-ms-interpolation-mode: bicubic; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-align: center; text-decoration: none; width: auto;">
+                            </center>
+                          </th>
+                          <th class="expander" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;"></th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;">
+                      <tbody>
+                        <tr style="padding: 0; text-align: left; vertical-align: top;">
+                          <th class="small-1 large-1 columns first" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 16px; padding-right: 8px; text-align: left; width: 32.33333px;"></th>
+                          <th class="small-10 large-10 columns" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 8px; padding-right: 8px; text-align: left; width: 490.33333px;">
+                            <p class="text-left small-text-left" style="color: #666666; font-family: 'Trebuchet MS'; font-size: 14px; font-weight: normal; line-height: 1.3; margin: 0; margin-bottom: 0px; padding: 0px; text-align: left;">Olá ##NomeCliente##,</p><br>
+                            <p class="text-left small-text-left" style="color: #666666; font-family: 'Trebuchet MS'; font-size: 14px; font-weight: normal; line-height: 1.3; margin: 0; margin-bottom: 0px; padding: 0px; text-align: left;">Queremos continuar te oferecendo a melhor experiência Vivo. Para isso, é preciso que suas contas estejam sempre em dia. </p><br>
+                            <p class="text-left small-text-left" style="color: #666666; font-family: 'Trebuchet MS'; font-size: 14px; font-weight: normal; line-height: 1.3; margin: 0; margin-bottom: 0px; padding: 0px; text-align: left;">Fizemos um resumo de tudo o que está disponível pra você em nossos canais de atendimento, para facilitar a sua vida nesse momento. Vamos lá?<br>
+                            </p>
+
+                          </th>
+                          <th class="small-1 large-1 columns last" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 8px; padding-right: 8px; text-align: left; width: 32.33333px;"></th>
+                          <th class="expander" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;"></th>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;">
+                      <tbody>
+                        <tr style="padding: 0; text-align: left; vertical-align: top;">
+                          <td height="25px" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 25px; font-weight: normal; hyphens: auto; line-height: 25px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&nbsp;</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="row collapse" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;">
+                      <tbody>
+                        <tr style="padding: 0; text-align: left; vertical-align: top;">
+                          <th class="small-12 large-12 columns first last" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 0px; padding-left: 0; padding-right: 0; text-align: left; width: 588px;">
+                            <center style="min-width: 532px; width: 100%;">
+                              <a href="https://meu.vivo/XQZm/2v" target="_blank" style="color: #710998; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">
+                                <img src="um.png" class="float-center small-float-center" align="center" alt="Time 1" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-align: center; text-decoration: none; width: auto;"></a>
+                            </center>
+                          </th>
+                          <th class="expander" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;"></th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="row collapse" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;">
+                      <tbody>
+                        <tr style="padding: 0; text-align: left; vertical-align: top;">
+                          <th class="small-12 large-12 columns first last" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 0px; padding-left: 0; padding-right: 0; text-align: left; width: 588px;">
+                            <center style="min-width: 532px; width: 100%;">
+                              <a href="http://vivoemdia.vivo.com.br" target="_blank" style="color: #710998; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">
+                                <img src="um-dois.png" class="float-center small-float-center" align="center" alt="Time 1" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-align: center; text-decoration: none; width: auto;"></a>
+                            </center>
+                          </th>
+                          <th class="expander" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;"></th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="row collapse" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;">
+                      <tbody>
+                        <tr style="padding: 0; text-align: left; vertical-align: top;">
+                          <th class="small-12 large-12 columns first last" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 0px; padding-left: 0; padding-right: 0; text-align: left; width: 588px;">
+                            <center style="min-width: 532px; width: 100%;">
+                              <a href="https://meu.vivo/XQZm/2v" target="_blank" style="color: #710998; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">
+                                <img src="dois.png" class="float-center small-float-center" align="center" alt="Time 1" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-align: center; text-decoration: none; width: auto;"></a>
+                            </center>
+                          </th>
+                          <th class="expander" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;"></th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="row collapse" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;">
+                      <tbody>
+                        <tr style="padding: 0; text-align: left; vertical-align: top;">
+                          <th class="small-12 large-12 columns first last" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 0px; padding-left: 0; padding-right: 0; text-align: left; width: 588px;">
+                            <center style="min-width: 532px; width: 100%;">
+                              <a href="http://vivoemdia.vivo.com.br" target="_blank" style="color: #710998; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">
+                                <img src="dois-dois.png" class="float-center small-float-center" align="center" alt="Time 1" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-align: center; text-decoration: none; width: auto;"></a>
+                            </center>
+                          </th>
+                          <th class="expander" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;"></th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="row collapse" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;">
+                      <tbody>
+                        <tr style="padding: 0; text-align: left; vertical-align: top;">
+                          <th class="small-12 large-12 columns first last" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 0px; padding-left: 0; padding-right: 0; text-align: left; width: 588px;">
+                            <center style="min-width: 532px; width: 100%;">
+                              <a href="http://vivoemdia.vivo.com.br" target="_blank" style="color: #710998; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">
+                                <img src="lista3.png" class="float-center small-float-center" align="center" alt="Time 3" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-align: center; text-decoration: none; width: auto;"></a>
+                            </center>
+                          </th>
+                          <th class="expander" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;"></th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="row collapse" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;">
+                      <tbody>
+                        <tr style="padding: 0; text-align: left; vertical-align: top;">
+                          <th class="small-12 large-12 columns first last" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 0px; padding-left: 0; padding-right: 0; text-align: left; width: 588px;">
+                            <center style="min-width: 532px; width: 100%;">
+                              <img src="lista4.png" class="float-center small-float-center" align="center" alt="Time 4" style="-ms-interpolation-mode: bicubic; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-align: center; text-decoration: none; width: auto;">
+                            </center>
+                          </th>
+                          <th class="expander" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;"></th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="row" style="background: #67009b; border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;">
+                      <tbody>
+                        <tr style="padding: 0; text-align: left; vertical-align: top;">
+                          <th class="small-1 large-1 columns first" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 16px; padding-right: 8px; text-align: left; width: 32.33333px;"><img src="pixel.png" width="46" height="1" alt="" style="max-width:100%;height:auto;"></th>
+                          <th class="small-10 large-10 columns" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 8px; padding-right: 8px; text-align: left; width: 490.33333px;">
+                            
+                            <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;">
+                              <tbody>
+                                <tr style="padding: 0; text-align: left; vertical-align: top;">
+                                  <td height="25px" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 25px; font-weight: normal; hyphens: auto; line-height: 25px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&nbsp;</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            
+                            <p class="text-left small-text-center" style="color: #ffffff; font-family: 'Trebuchet MS'; font-size: 23px; font-weight: normal; line-height: 1.3; margin: 0; margin-bottom: 0px; padding: 10px; text-align: left;"><strong style="color: #ffffff;">O que é importante você saber,</strong> caso a conta continue com pagamento pendente?</p>
+                          </th>
+                          <th class="small-1 large-1 columns last" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 8px; padding-right: 8px; text-align: left; width: 32.33333px;"><img src="pixel.png" width="46" height="1" alt="" style="max-width:100%;height:auto;"></th>
+                          <th class="expander" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;"></th>
+                        </tr>
+                      </tbody>
+                    </table>
+                   
+                   
+                    <table class="row" style="background: #67009b; border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;">
+                      <tbody>
+                        <tr style="padding: 0; text-align: left; vertical-align: top;">
+                          <th class="small-1 large-1 columns first" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 16px; padding-right: 8px; text-align: left; width: 32.33333px;"><img src="pixel.png" width="46" height="1" alt="" style="max-width:100%;height:auto;"></th>
+                          <th class="small-12 large-3 columns" valign="middle" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 8px; padding-right: 8px; text-align: left; width: 129px;">
+
+                            <img class="float-center small-float-center" src="icone4.png" alt="Medidor" style="-ms-interpolation-mode: bicubic; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-align: center; text-decoration: none; width: auto;">
+                          </th>
+                          <th class="small-12 large-8 columns" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 8px; padding-right: 8px; text-align: left; width: 370.66667px;">
+                            <p class="text-left small-text-center" style="color: #ffffff; font-family: 'Trebuchet MS'; font-size: 14px; font-weight: normal; line-height: 1.3; margin: 0; margin-bottom: 0px; padding: 10px; text-align: left;">Após 15 dias do primeiro aviso de cobrança, poderá ocorrer o bloqueio parcial: sua internet será reduzida e você não poderá mais fazer ligações.</p>
+                          </th>
+                          <th class="small-1 large-0 columns last" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 16px; padding-right: 16px; text-align: left;"><img src="pixel.png" width="32" height="1" alt="" style="max-width:100%;height:auto;"></th>
+                          <th class="expander" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;"></th>
+                        </tr>
+                      </tbody>
+                    </table>
+                   
+                   
+                    <table class="row" style="background: #67009b; border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;">
+                      <tbody>
+                        <tr style="padding: 0; text-align: left; vertical-align: top;">
+                          <th class="small-1 large-1 columns first" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 16px; padding-right: 8px; text-align: left; width: 32.33333px;"><img src="pixel.png" width="46" height="1" alt="" style="max-width:100%;height:auto;"></th>
+                          <th class="small-12 large-3 columns" valign="middle" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 8px; padding-right: 8px; text-align: left; width: 129px;">
+                            <img class="float-center small-float-center" src="icone5.png" alt="Opcao de pagamento" style="-ms-interpolation-mode: bicubic; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-align: center; text-decoration: none; width: auto;">
+                          </th>
+                          <th class="small-12 large-8 columns" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 8px; padding-right: 8px; text-align: left; width: 370.66667px;">
+                            <p class="text-left small-text-center" style="color: #ffffff; font-family: 'Trebuchet MS'; font-size: 14px; font-weight: normal; line-height: 1.3; margin: 0; margin-bottom: 0px; padding: 10px; text-align: left;">Após 45 dias do primeiro aviso de cobrança, este bloqueio poderá ser total. Além de ficar sem internet, você também não poderá fazer nem receber chamadas.
+                            </p>
+                          </th>
+                          <th class="small-1 large-0 columns last" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 16px; padding-right: 16px; text-align: left;"><img src="pixel.png" width="32" height="1" alt="" style="max-width:100%;height:auto;"></th>
+                          <th class="expander" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;"></th>
+                        </tr>
+                      </tbody>
+                    </table>
+                   
+                   
+                    <table class="row" style="background: #67009b; border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;">
+                      <tbody>
+                        <tr style="padding: 0; text-align: left; vertical-align: top;">
+                          <th class="small-1 large-1 columns first" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 16px; padding-right: 8px; text-align: left; width: 32.33333px;"><img src="pixel.png" width="46" height="1" alt="" style="max-width:100%;height:auto;"></th>
+                          <th class="small-12 large-3 columns" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 8px; padding-right: 8px; text-align: left; width: 129px;">
+                            <img class="float-center small-float-center" src="icone6.png" alt="2 via disponivel" style="-ms-interpolation-mode: bicubic; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-align: center; text-decoration: none; width: auto;">
+                          </th>
+                          <th class="small-12 large-8 columns" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 8px; padding-right: 8px; text-align: left; width: 370.66667px;">
+                            <p class="text-left small-text-center" style="color: #ffffff; font-family: 'Trebuchet MS'; font-size: 14px; font-weight: normal; line-height: 1.3; margin: 0; margin-bottom: 0px; padding: 10px; text-align: left;">Seus serviços Vivo poderão ser cancelados após 75 dias do primeiro aviso de cobrança e o seu CPF poderá ser negativado no SCPC e Serasa.
+                            </p>
+                            
+                            <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;">
+                              <tbody>
+                                <tr style="padding: 0; text-align: left; vertical-align: top;">
+                                  <td height="25px" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 25px; font-weight: normal; hyphens: auto; line-height: 25px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&nbsp;</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            
+                          </th>
+                          <th class="small-1 large-0 columns last" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 16px; padding-right: 16px; text-align: left;"><img src="pixel.png" width="32" height="1" alt="" style="max-width:100%;height:auto;"></th>
+                          <th class="expander" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;"></th>
+                        </tr>
+                      </tbody>
+                    </table>
+                   
+                    
+                    <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;">
+                      <tbody>
+                        <tr style="padding: 0; text-align: left; vertical-align: top;">
+                          <td height="25px" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 25px; font-weight: normal; hyphens: auto; line-height: 25px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&nbsp;</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    
+                   
+                    <table class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;">
+                      <tbody>
+                        <tr style="padding: 0; text-align: left; vertical-align: top;">
+                          <th class="small-1 large-1 columns first" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 16px; padding-right: 8px; text-align: left; width: 32.33333px;"><img src="pixel.png" width="32" height="1" alt="" style="max-width:100%;height:auto;"></th>
+                          <th class="small-10 large-10 columns" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 8px; padding-right: 8px; text-align: left; width: 490.33333px;">
+                            <p class="text-left small-text-center" style="color: #660099; font-family: 'Trebuchet MS'; font-size: 26px; font-weight: normal; line-height: 1.3; margin: 0; margin-bottom: 0px; padding: 10px; text-align: left;">Que tal ter até <strong style="color: #660099;">6GB de bônus</strong> de internet todo mês?</p>
+                          </th>
+                          <th class="small-1 large-1 columns last" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 8px; padding-right: 8px; text-align: left; width: 32.33333px;"><img src="pixel.png" width="32" height="1" alt="" style="max-width:100%;height:auto;"></th>
+                          <th class="expander" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;"></th>
+                        </tr>
+                      </tbody>
+                    </table>
+                   
+                   
+                    <table class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;">
+                      <tbody>
+                        <tr style="padding: 0; text-align: left; vertical-align: top;">
+                          <th class="small-1 large-1 columns first" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 16px; padding-right: 8px; text-align: left; width: 32.33333px;"></th>
+                          <th class="small-12 large-3 columns" valign="middle" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 8px; padding-right: 8px; text-align: left; width: 129px;">
+                            <img class="float-center small-float-center" src="mulher-meditano.png" alt="Mulher Meditando" style="-ms-interpolation-mode: bicubic; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-align: center; text-decoration: none; width: auto;">
+                          </th>
+                          <th class="small-12 large-8 columns" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 8px; padding-right: 8px; text-align: left; width: 370.66667px;">
+                            <p class="text-left small-text-center" style="color: #666666; font-family: 'Trebuchet MS'; font-size: 14px; font-weight: normal; line-height: 1.3; margin: 0; margin-bottom: 0px; padding: 0px; text-align: left;"><strong style="color: #666666;">Sua tranquilidade em débito automático.</strong><br> Se a sua conta ainda não está em débito automático, cadastre agora, tenha mais praticidade com a data de vencimento e ganhe <span style="color: #710898;">+ 3GB de bônus</span>                              de internet todo mês.</p><br>
+                            <a href="https://meu.vivo/XQZm/da" target="_blank" style="color: #710998; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">
+                              <img class="float-right small-float-center" align="right" src="botao.png" alt="Botao" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: right; max-width: 100%; outline: none; text-align: right; text-decoration: none; width: auto;"></a>
+                          </th>
+                          <th class="small-1 large-0 columns last" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 16px; padding-right: 16px; text-align: left;"><img src="pixel.png" width="32" height="1" alt="" style="max-width:100%;height:auto;"></th>
+                          <th class="expander" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;"></th>
+                        </tr>
+                      </tbody>
+                    </table>
+                   
+                   
+                    <table class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;">
+                      <tbody>
+                        <tr style="padding: 0; text-align: left; vertical-align: top;">
+                          <th class="small-12 large-12 columns first last" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 16px; padding-right: 16px; text-align: left; width: 564px;">
+                            <center style="min-width: 532px; width: 100%;">
+                              <img class="float-center small-float-center" align="center" src="linha-cinza.png" alt="Linha Cinza" style="-ms-interpolation-mode: bicubic; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-align: center; text-decoration: none; width: auto;">
+                            </center>
+                          </th>
+                          <th class="expander" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;"></th>
+                        </tr>
+                      </tbody>
+                    </table>
+                   
+                   
+                    <table class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;">
+                      <tbody>
+                        <tr style="padding: 0; text-align: left; vertical-align: top;">
+                          <th class="small-1 large-1 columns first" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 16px; padding-right: 8px; text-align: left; width: 32.33333px;"></th>
+                          <th class="small-12 large-3 columns" valign="middle" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 8px; padding-right: 8px; text-align: left; width: 129px;">
+                            <img class="float-center small-float-center" src="maozinha.png" alt="Mao" style="-ms-interpolation-mode: bicubic; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-align: center; text-decoration: none; width: auto;">
+                          </th>
+                          <th class="small-12 large-8 columns" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 8px; padding-right: 8px; text-align: left; width: 370.66667px;">
+                            <p class="text-left small-text-center" style="color: #666666; font-family: 'Trebuchet MS'; font-size: 14px; font-weight: normal; line-height: 1.3; margin: 0; margin-bottom: 0px; padding: 0px; text-align: left;"><strong style="color: #666666;">Conta Digital, boa pra você e para o meio ambiente.</strong><br> <br> Se você ainda não recebe sua conta <span style="color: #710898;">exclusivamente</span> por e-mail, ative e garanta mais
+                              <span
+                                style="color: #710898;">3GB de bônus</span> na sua internet e ajude a preservar a natureza com menos desperdício de papel.</p><br>
+                            <a href="https://vivo.tl/cod" target="_blank" style="color: #710998; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">
+                              <img class="float-right small-float-center" align="right" src="botao.png" alt="Botao" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: right; max-width: 100%; outline: none; text-align: right; text-decoration: none; width: auto;"></a>
+                          </th>
+                          <th class="small-1 large-0 columns last" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 16px; padding-right: 16px; text-align: left;"><img src="pixel.png" width="32" height="1" alt="" style="max-width:100%;height:auto;"></th>
+                          <th class="expander" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;"></th>
+                        </tr>
+                      </tbody>
+                    </table>
+                   
+                   
+                    <table class="row" style="background: #f2f2f2; border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;">
+                      <tbody>
+                        <tr style="padding: 0; text-align: left; vertical-align: top;">
+                          <th class="small-1 large-1 columns first" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 16px; padding-right: 8px; text-align: left; width: 32.33333px;"><img src="pixel.png" width="46" height="1" alt="" style="max-width:100%;height:auto;"></th>
+                          <th class="small-10 large-10 columns" valign="middle" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 8px; padding-right: 8px; text-align: left; width: 490.33333px;">
+                            
+                            <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;">
+                              <tbody>
+                                <tr style="padding: 0; text-align: left; vertical-align: top;">
+                                  <td height="25px" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 25px; font-weight: normal; hyphens: auto; line-height: 25px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&nbsp;</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            
+                            <p class="text-left small-text-left" style="color: #666666; font-family: 'Trebuchet MS'; font-size: 14px; font-weight: normal; line-height: 1.3; margin: 0; margin-bottom: 0px; padding: 0px; text-align: left;">Todas estas informações também estão disponíveis pra você na nossa página <a href="https://www.vivo.com.br/minhaconta" target="_blank" style="color: #67009b; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: underline;">vivo.com.br/minhaconta</a>.
+                              Se preferir, ligue para <span style="color: #710898;">0800 774 1515</span> de segunda a sábado, das 8h às 22h (exceto em feriados nacionais).</p><br>
+                              <p class="text-left small-text-left" style="color: #666666; font-family: 'Trebuchet MS'; font-size: 14px; font-weight: normal; line-height: 1.3; margin: 0; margin-bottom: 0px; padding: 0px; text-align: left;">E anote o número da conta, é com ele que você consegue saber qual linha está com a conta atrasada, caso você tenha mais de uma: ##CodigoCliente##
+                              </p><br>
+                            <p class="text-left small-text-left" style="color: #666666; font-family: 'Trebuchet MS'; font-size: 14px; font-weight: normal; line-height: 1.3; margin: 0; margin-bottom: 0px; padding: 0px; text-align: left;">Ah, não responda este e-mail, pois é uma mensagem automática. Para falar com a gente, é só escolher os canais que já informamos pra você, ok?</p>
+                            
+                            <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;">
+                              <tbody>
+                                <tr style="padding: 0; text-align: left; vertical-align: top;">
+                                  <td height="25px" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 25px; font-weight: normal; hyphens: auto; line-height: 25px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&nbsp;</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            
+                          </th>
+                          <th class="small-1 large-1 columns last" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 8px; padding-right: 8px; text-align: left; width: 32.33333px;"><img src="pixel.png" width="46" height="1" alt="" style="max-width:100%;height:auto;"></th>
+                          <th class="expander" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;"></th>
+                        </tr>
+                      </tbody>
+                    </table>
+                   
+                    
+                    <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;">
+                      <tbody>
+                        <tr style="padding: 0; text-align: left; vertical-align: top;">
+                          <td height="25px" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 25px; font-weight: normal; hyphens: auto; line-height: 25px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&nbsp;</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    
+                    <table class="row show-for-large" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;">
+                      <tbody>
+                        <tr style="padding: 0; text-align: left; vertical-align: top;">
+                          <th class="small-1 large-1 columns first" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 16px; padding-right: 8px; text-align: left; width: 32.33333px;"><img src="pixel.png" width="46" height="1" alt="" style="max-width:100%;height:auto;"></th>
+                          <th class="small-12 large-7 columns" style="border-bottom: #770a5e solid 1px; color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 0px !important; padding-right: 8px; text-align: left; width: 322.33333px;">
+                            <table class="row show-for large" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;">
+                              <tbody>
+                                <tr style="padding: 0; text-align: left; vertical-align: top;">
+                                  <th style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;">
+                                    <p class="small-text-center texte-left" style="color: #666666; font-family: 'Trebuchet MS'; font-size: 14px; font-weight: normal; line-height: 1.3; margin: 0; margin-bottom: 0px; padding: 10px; text-align: left;">
+                                      Conte sempre com a gente,<br>
+                                      <strong style="color: #660099;"> Equipe Vivo</strong>
+                                    </p>
+                                  </th>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </th>
+                          <th class="small-10 large-3 columns" valign="middle" style="border-bottom: #770a5e solid 1px; color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 8px; padding-right: 0px !important; text-align: left; width: 129px;">
+                            <table class="row show-for large" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;">
+                              <tbody>
+                                <tr style="padding: 0; text-align: left; vertical-align: top;">
+                                  <th style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;">
+                                    <center style="min-width: 97px; width: 100%;">
+                                      <img class="float-right small-float-center" align="right" src="vivinho.png" alt="Vivinho" style="-ms-interpolation-mode: bicubic; clear: both; display: block; float: right; max-width: 100%; outline: none; text-align: right; text-decoration: none; width: auto;">
+                                    </center>
+                                  </th>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </th>
+                          <th class="small-1 large-1 columns last" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 8px; padding-right: 8px; text-align: left; width: 32.33333px;"><img src="pixel.png" width="46" height="1" alt="" style="max-width:100%;height:auto;"></th>
+                          <th class="expander" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;"></th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;">
+                      <tbody>
+                        <tr style="padding: 0; text-align: left; vertical-align: top;">
+                          <td height="25px" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 25px; font-weight: normal; hyphens: auto; line-height: 25px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&nbsp;</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    
+                    <table class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;">
+                      <tbody>
+                        <tr style="padding: 0; text-align: left; vertical-align: top;">
+                          <th class="small-1 large-1 columns first" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 16px; padding-right: 8px; text-align: left; width: 32.33333px;"><img src="pixel.png" width="46" height="1" alt="" style="max-width:100%;height:auto;"></th>
+                          <th class="small-10 large-10 columns" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 8px; padding-right: 8px; text-align: left; width: 490.33333px;">
+                            <table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;">
+                              <tbody>
+                                <tr style="padding: 0; text-align: left; vertical-align: top;">
+                                  <th style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;">
+                                    <img class="float-right small-float-center" align="right" src="fibra.png" alt="Fibra" style="-ms-interpolation-mode: bicubic; clear: both; display: block; float: right; max-width: 100%; outline: none; text-align: right; text-decoration: none; width: auto;">
+                                  </th>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </th>
+                          <th class="small-1 large-1 columns last" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 8px; padding-right: 8px; text-align: left; width: 32.33333px;"><img src="pixel.png" width="46" height="1" alt="" style="max-width:100%;height:auto;"></th>
+                          <th class="expander" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;"></th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;">
+                      <tbody>
+                        <tr style="padding: 0; text-align: left; vertical-align: top;">
+                          <th class="small-1 large-1 columns first" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 16px; padding-right: 8px; text-align: left; width: 32.33333px;"><img src="pixel.png" width="46" height="1" alt="" style="max-width:100%;height:auto;"></th>
+                          <th align="center" class="small-10 large-10 columns" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 8px; padding-right: 8px; text-align: left; width: 490.33333px;">
+                            <p class="small-text-center text-left" style="color: grey; font-family: 'Trebuchet MS'; font-size: 9px; font-weight: normal; line-height: 1.3; margin: 0; margin-bottom: 0px; padding: 0px; text-align: left;">
+                              (*) Não é possível pagar com cartão de crédito a entrada/parcela de acordo que não estiverem inclusas na conta mensal. A opção de pagamento com cartão de crédito nas bandeiras Visa e Mastercard já está disponível para alguns serviços da Vivo (pessoa física)
+                              pelo site Vivo em Dia. Acesse e consulte disponibilidade.
+                            </p><br>
+                            <p class="small-text-center text-left" style="color: grey; font-family: 'Trebuchet MS'; font-size: 9px; font-weight: normal; line-height: 1.3; margin: 0; margin-bottom: 0px; padding: 0px; text-align: left;">
+                              Central de atendimento: ligue*8486 de um telefone Vivo ou 1058 de qualquer telefone. Para deficientes da fala/audição, ligue 142. Estamos à disposição 24 horas por dia, 7 dias por semana.
+                            </p><br>
+                          </th>
+                          <th class="small-1 large-1 columns last" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 15px !important; padding-right: 8px; text-align: left; width: 32.33333px;"></th>
+                          <th class="expander" style="color: #0a0a0a; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;"></th>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </center>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+</body>
+
+</html>

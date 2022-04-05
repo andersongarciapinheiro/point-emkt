@@ -52,8 +52,8 @@
       .wd80{width: 80% !important;}
       .font26{font-size: 26px !important;}
 
-      .desktop{width: 1px !important; height: 1px !important;}
-      .mobile{width: 170px !important; height: 40px !important;}
+      .desktop{display: none !important;}
+      .mobile{display: block !important; font-size: 16px !important;}
     }
 </style>
 
@@ -344,16 +344,32 @@
                       </tr>
                       <tr>
                         <td align="center">
-                          <a href="#link-desktop" target="_blank">
-                            <img border="0" width="170" height="40" style="display: block;" src="https://www.vivo.com.br/content/dam/crm/janeiro22/templates_modulares_ftth/btn_consulte_ja.png" alt="CONSULTE JÁ" class="desktop">
-                          </a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td align="center">
-                          <a href="#link-mobile" target="_blank">
-                            <img border="0" width="1" height="1" style="display: block;" src="https://www.vivo.com.br/content/dam/crm/janeiro22/templates_modulares_ftth/btn_consulte_ja.png" alt="CONSULTE JÁ" class="mobile">
-                          </a>
+                          <table border="0" cellpadding="0" cellspacing="0" width="170">
+                            <tr>
+                              <td bgcolor="#FA10C6" align="center" style="padding: 12px 0 12px 0; border-radius: 5px 5px 5px 5px;">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                  <tr>
+                                    <td align="center" class="desktop">
+                                      <a href="#link-desktop" target="_blank" style="text-decoration: none;">
+                                        <font face="Trebuchet MS, Arial, sans-serif" style="font-size: 16px; line-height: 1.2; color: #ffffff; display: block; font-weight: bold;">
+                                          CONSULTE JÁ
+                                        </font>
+                                      </a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="center" style="display: none;" class="mobile">
+                                      <a href="#link-mobile" target="_blank" style="text-decoration: none;">
+                                        <font face="Trebuchet MS, Arial, sans-serif" style="font-size: 0px; line-height: 1.2; color: #ffffff; display: block; font-weight: bold;" class="mobile">
+                                          CONSULTE JÁ
+                                        </font>
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
                         </td>
                       </tr>
                     </table>

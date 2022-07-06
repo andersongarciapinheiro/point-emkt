@@ -1,0 +1,996 @@
+Delivered-To: viniicbg@gmail.com
+Received: by 2002:a05:6400:48:0:0:0:0 with SMTP id hv8csp1350912ecb;
+        Thu, 16 Jun 2022 04:39:08 -0700 (PDT)
+X-Google-Smtp-Source: AGRyM1vA+jUZK55S0vL/yFwr6bbUHthCFV1DrIyUr1rQSMCClHeeHCjNg1nIZp0fZjgBPRS7ywwA
+X-Received: by 2002:a17:90b:2251:b0:1e6:76a8:44f3 with SMTP id hk17-20020a17090b225100b001e676a844f3mr15750798pjb.71.1655379548239;
+        Thu, 16 Jun 2022 04:39:08 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1655379548; cv=none;
+        d=google.com; s=arc-20160816;
+        b=0XeVBmcqTIyDG0GQZbM1xwQWUC663DtEyHMWBG3RruIjO9xYpMJfyjQoULYgjnrRL3
+         wzt8aBPewNNO+9F9S7cIS6zt2CR0piXRSlb15lfmOmeghTMgm3131s0/2vIWoCdJOq7v
+         GHLl0mMmgPYXsyBZ9tPbkTb1Tp9x2i0D9EEHM7jIUC1KsZ7os2AqPs4aSKScY9BQ2Tn+
+         jIG/3H18qtvIMf22NytB818Zo0z6ZxaVpzE/CoGPG1C2hx89do/dKANFHVobqSiY7YCd
+         hcfnEMhQkK6Xfq6ojCISQQgvc64qrgV9m4jq5hRvkkpMkRRdO4LDJr9NXGYfR/3umVaz
+         I7Dg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=feedback-id:message-id:list-id:mime-version:list-unsubscribe-post
+         :list-unsubscribe:date:subject:to:from:dkim-signature;
+        bh=jnRY5a3n9Sofp5c4sz65CGJgM06qjhpllE3DGP7lU0s=;
+        b=aPT8Pl0rDSqoIrFb5qLOrUY8RebIKtg1mxoi/5hoSvrnQoKPVHQoJdYgqgxaxDplyf
+         ZQ+BDreyU25us1xkrGX/FBQod+lT2bIstie0Rpn70A8KUbM/l68FuFSFAJaQ6XkLRjy7
+         qDdJAbyXfFrP1X/kq8w8ZQQ/lzVS6c/50DulHzUGmt30E8D34yiuqF0ywwu25QvEWzJ0
+         rtywVjqVWBcqIEMZh+nL5Lzfo6g1nyAK4hLHOQRbMpAXUBe7gH4Mq/huJomNrnt1C3m1
+         KTtZWxa93X1aIux9G3xClSMnXWmBNooUg+aRCr11vc7Qe+NeI1k3tchFWerJghXIsZCJ
+         25Xg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@mail.e.cea.com.br header.s=12dkim1 header.b=NsuvSDMv;
+       spf=pass (google.com: domain of bounce-1381_html-73691817-113145-526000944-24013@bounce.mail.e.cea.com.br designates 13.110.210.244 as permitted sender) smtp.mailfrom=bounce-1381_HTML-73691817-113145-526000944-24013@bounce.mail.e.cea.com.br
+Return-Path: <bounce-1381_HTML-73691817-113145-526000944-24013@bounce.mail.e.cea.com.br>
+Received: from mta.mail.e.cea.com.br (mta.mail.e.cea.com.br. [13.110.210.244])
+        by mx.google.com with ESMTPS id lk16-20020a17090b33d000b001e8990cf76dsi2306080pjb.176.2022.06.16.04.39.07
+        for <viniicbg@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 16 Jun 2022 04:39:08 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce-1381_html-73691817-113145-526000944-24013@bounce.mail.e.cea.com.br designates 13.110.210.244 as permitted sender) client-ip=13.110.210.244;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@mail.e.cea.com.br header.s=12dkim1 header.b=NsuvSDMv;
+       spf=pass (google.com: domain of bounce-1381_html-73691817-113145-526000944-24013@bounce.mail.e.cea.com.br designates 13.110.210.244 as permitted sender) smtp.mailfrom=bounce-1381_HTML-73691817-113145-526000944-24013@bounce.mail.e.cea.com.br
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=12dkim1; d=mail.e.cea.com.br;
+ h=From:To:Subject:Date:List-Unsubscribe:List-Unsubscribe-Post:MIME-Version:
+ List-ID:X-CSA-Complaints:Message-ID:Content-Type; i=cea@mail.e.cea.com.br;
+ bh=jnRY5a3n9Sofp5c4sz65CGJgM06qjhpllE3DGP7lU0s=;
+ b=NsuvSDMv87/hyf/Q+g9M6Y9aQDhwqiQv+7rKHxFgtRAhL3whshsLO72U4yyLuObxk1tSxs2JejXM
+   U7viamG84pAfdkr+nlyDWDMIAjgHo2dqntNk9OrXaiXhQrJQCRXxObmpaWwwnDlFUBuDqMvQKOfP
+   OQBserkVo6FFjFXw1pGRYAsXNpdZRwzj8AJrkV9ja4SE+/pKwz81C9hq6HW4EbKyU/p2EqVxhlV5
+   4fyatzlJKjlXgh94+e+1VCJuz5Wi7pwkyqmPq2ASRhJvUjNDBEddr4vyksARSX1k2D34DNK36aIU
+   BuojygjsbEdVwWN3UWwS83oe7ePMVRT1JnC5aQ==
+Received: by mta.mail.e.cea.com.br id hlcb5o2fmd4c for <viniicbg@gmail.com>; Thu, 16 Jun 2022 11:31:34 +0000 (envelope-from <bounce-1381_HTML-73691817-113145-526000944-24013@bounce.mail.e.cea.com.br>)
+From: "C&A" <cea@mail.e.cea.com.br>
+To: <viniicbg@gmail.com>
+Subject: =?UTF-8?B?4pqg77iPIEFURU7Dh8ODTzogSXRlbnMgcGFyYSBvIHNldSBndWFy?=
+ =?UTF-8?B?ZGEtcm91cGEgW0FRVUld?=
+Date: Thu, 16 Jun 2022 05:31:33 -0600
+List-Unsubscribe: <https://click.mail.e.cea.com.br/subscription_center.aspx?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtaWQiOiI1MjYwMDA5NDQiLCJzIjoiNzM2OTE4MTciLCJsaWQiOiIxMzgxIiwiaiI6IjExMzE0NSIsImpiIjoiMjQwMTMiLCJkIjoiMTIwMDA0In0.pUwu5-4uJkPg6xovpH-2sEYWfPea_5ZlG2QKq2HKjtE>, <mailto:leave-fd1e15737d656b2531492c-fe551373736d05757413-fed0157176650078-fe3111727364047d7c1074-ff051674756507@leave.mail.e.cea.com.br>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+x-CSA-Compliance-Source: SFMC
+MIME-Version: 1.0
+List-ID: <526000944.xt.local>
+X-CSA-Complaints: csa-complaints@eco.de
+X-SFMC-Stack: 12
+x-job: 526000944_113145
+Message-ID: <e85a65bd-6f9b-42db-9c92-c83446b89a2b@iad4s12mta72.xt.local>
+Feedback-ID: 526000944:113145:13.110.210.244:sfmktgcld
+Content-Type: multipart/alternative;
+	boundary="i5rLvXoar2Ha=_?:"
+
+This is a multi-part message in MIME format.
+
+--i5rLvXoar2Ha=_?:
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+
+  
+ 
+
+ 
+https://view.mail.e.cea.com.br/?qs=c9198e9db91fc7ec35103eb6c8e4581b4ceb33e01f24fe1b003c5f220e7b8dfd580ad0622e6211e0496d387b89a1650d022e79f3156d411f76ed7b5c35c9a7af34ad511c01409fd54e7c3f0b89c9ff48 
+
+ ver online
+  
+https://click.mail.e.cea.com.br/unsub_center.aspx?qs=4dadf90d9a3d03f9668ae23d53a35ec1b18420f6f1fd38ff59aa12396109e98f96cfe8f368efe18a361107f9d80d61d74889fc9aa48916d9397a6148f5c5d11247b06feb94f70eda 
+
+ descadastre-se
+  
+
+https://click.mail.e.cea.com.br/?qs=c00371af77de8490df3acba6147eab6cc5218082f5e629dccff71b8a0857fa60b0b3772667027ee78826e5a8acc13606196a5e692c221f3f297aafd8c044fd47 
+
+
+  
+
+
+ 
+
+
+
+
+
+https://click.mail.e.cea.com.br/?qs=c00371af77de8490fd436b7dc540b9dda0c3eddfadb7276615dd4c167e37cb79455a15ecf862031674b71cf73faa67a9c6584c53f27d5040b37ca38efdf58029 
+
+
+https://click.mail.e.cea.com.br/?qs=c00371af77de8490cfd017e5c48903940bf70a5f0f24c200dd3469e86ae92004aa14ebe2b710d51c12bb2a20407511ee29a0722cdd27cd9d3a2931643cadb765 
+
+
+ Atualize o seu armário com as peças-tendência da temporada! Dos bonés até os calçados, o melhor da moda para você escolher os seus favoritos e arrasar por aí.
+ 
+
+https://click.mail.e.cea.com.br/?qs=c00371af77de8490696aa87386151109e9478b2f0b44f3b8f76fa4f763d9b670f546fa5e63c43fc25901f24be7fe1824003b75befa16f94ae513682888610a35 
+
+https://click.mail.e.cea.com.br/?qs=c00371af77de84909bdec28a03978a549c62b5511bc892e05b781652f89459fa2924d608e3007705df0d69082ad7f9ed6f72872b9353e95b2adf5f48e1885f7d 
+
+
+ Estilosa e necessária para os dias frios.
+ 
+ Opções modernas para sair do básico.
+ 
+
+https://click.mail.e.cea.com.br/?qs=c00371af77de84906ccaa441031884242dec2a2584a9b4deb3ecf217a54621042108171ecb158e974752f1bbaece15f919e062bce9abf70d9f24c149f90cfe75 
+
+https://click.mail.e.cea.com.br/?qs=c00371af77de849035f91a18996a60b7ab00b61ab11e3724bfdc0db066ba7d9ea7212289fe409da84323d50181e07dacf663b8680d1ee00e28f0de011dc1866d 
+
+
+ Tendência e conforto para o seu armário.
+ 
+ O clássico que combina com tudo.
+ 
+
+https://click.mail.e.cea.com.br/?qs=c00371af77de84908327037af88ab0c70395f5632d61f568c859e2086807ed334864fa924e17396cd4fb2122caffcc70fd2544c92f33e3679427a7c522a6baf1 
+
+https://click.mail.e.cea.com.br/?qs=c00371af77de8490371fe47d3f8cd2308574a37fb759a54f4e6ed12c17f945a95fc251dde671d7b32dd524413f4462460fa0cf06ea125d0d4253f8e9b3218c4a 
+
+
+ Peças esportivas perfeitas para quem ama se movimentar.
+ 
+ Dê um gás no seu treino com o calçado certo.
+ 
+
+https://click.mail.e.cea.com.br/?qs=c00371af77de849079ea088a2dbd5f3d3752dc8a51246c0ff5e4b3ade80ffb0e2f6f89ee3511982298bb1635bb9f31cff32f9586e3ea8d6bac0a402c73b44996 
+
+
+ Para deixar o seu look ainda mais estiloso.
+ 
+
+https://click.mail.e.cea.com.br/?qs=c00371af77de8490d4175bb40efaee74b8f10c26916842446f9cf1be4e7d4e499a7bb37c1eeef03f9968d000dd00f963953025191a692150781fefc65fc018d3 
+
+
+ Só quem é CURTE tem:
+ 
+
+ 10% OFF na 
+primeira compra
+ Pré-venda
+antecipada
+ 
+ Preços 
+especiais
+ Surpresa no seu 
+aniversário
+
+
+ Curadoria de moda 
+exclusivaFila expressa
+no caixa
+ 
+ Provador com até 
+18 peças
+ Caixa de presente 
+grátis
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ Para receber os nossos comunicados na caixa de entrada adicione o e-mail 
+mailto:cea@mail.e.cea.com.br 
+cea@mail.e.cea.com.br  em sua lista de remetentes confiáveis.
+ 
+
+• Promoção válida por prazo indeterminado. Na compra em nossas lojas físicas e/ou em nosso site 
+https://click.mail.e.cea.com.br/?qs=c00371af77de8490bc80974d1ce9fae949bb7a51b368edad111f81b84914d53dfe3ae05ad5a525ed15150dccf40791da50508d40d84b09fe1d7a4384964165e1 
+(cea.com.br) , para cada múltiplo de R$ 50,00 (cinquenta reais) o cliente ganhará um lik&. Os valores excedentes da compra não múltiplos de R$ 50,00 (cinquenta reais) não serão pontuados e, também, não podem ser cumulados a próxima compra. Os descontos concedidos pelo programa não serão legítimos para compra de eletrônicos, óculos, produtos de beleza, marketplace, recarga de celular, compra de cartão presente, e uso para compra de produto em promoção; não cumulativa com outras promoções. Associado C&A participante da campanha não é elegível para qualquer benefício de desconto. Benefício pessoal e intransferível. O crédito de lik&s estará disponível no prazo de 72 (setenta e duas) horas após o faturamento da compra. Os lik&s terão validade de 12 (doze) meses a contar da data de aquisição.
+ É de responsabilidade do cliente informar o CPF durante suas compras para acúmulo de lik&s, não sendo possível fazê-lo de forma retroativa.
+ 
+ 
+
+• Consulte condições de utilização do desconto de Boas-Vindas, Caixa de Presente e Aniversário no Regulamento em nosso site 
+www.cea.com.br/evc 
+www.cea.com.br/evc . O uso do desconto deve ser feito em totalidade. Os descontos concedidos pelo programa não serão legítimos para compra de eletrônicos, óculos, produtos de beleza, marketplace, recarga de celular, compra de cartão presente, e uso para compra de produto em promoção; e não disponível para empregado C&A. Benefício pessoal e intransferível.
+
+Fale Conosco
+Sugestão, comentário ou dúvida sobre a C&A ou produtos e serviços? Fale Conosco pelo e-mail 
+mailto:faleconosco@cea.com.br 
+faleconosco@cea.com.br  ou telefone, no (11) 4571-2960. Atendemos de segunda a sábado, das 9h às 21h.
+ 
+ 
+
+ Prazos e Entregas
+
+O prazo para entrega contempla estoque, região, processo de emissão da nota fiscal e o tempo de separação do produto. Nosso prazo é contado a partir do dia útil seguinte a sua confirmação de pagamento e dados cadastrais. As entregas são feitas de segunda a sexta-feira, das 9h às 21h.
+
+
+Frete Grátis
+
+Calculamos seu frete automaticamente, de acordo com a região de entrega do pedido. Frete grátis para Sul, Sudeste (Capital e Interior ) para valores acima de R$150,00 em compras no site. Frete grátis para Nordeste e Centro Oeste (Capital e Interior) para valores acima de R$200,00 em compras no site. Frete grátis para Norte (Capital e Interior) para valores acima de R$250,00 em compras no site. Consulte seu CEP no momento da compra.
+
+
+Preços e promoções
+
+Os preços dos produtos podem mudar sem aviso prévio e são válidos até o fim do estoque. Os produtos anunciados não incluem o valor do frete. Os descontos em valores de compra não estão ligados a descontos de frete. As fotos são meramente ilustrativas.
+
+ 
+
+A C&A Modas Ltda. fica na Alameda Araguaia, 1222, Alphaville, Barueri - SP. Cep: 06455-000. Todas as suas informações pessoais são mantidas em confidencialidade no momento da compra. Veja nossa Política de Privacidade 
+https://click.mail.e.cea.com.br/?qs=c00371af77de8490bb7acb732d6822bec737182d90ca99fb211a1a1ede3cbd468f1a760c74e576ca89b5062ad13bfdf1e88ecbadf51294926b68a9868a6d5fbe 
+aqui. 
+
+https://view.mail.e.cea.com.br/?qs=c9198e9db91fc7ec35103eb6c8e4581b4ceb33e01f24fe1b003c5f220e7b8dfd580ad0622e6211e0496d387b89a1650d022e79f3156d411f76ed7b5c35c9a7af34ad511c01409fd54e7c3f0b89c9ff48 
+
+ ver online
+  
+https://click.mail.e.cea.com.br/unsub_center.aspx?qs=4dadf90d9a3d03f9668ae23d53a35ec1b18420f6f1fd38ff59aa12396109e98f96cfe8f368efe18a361107f9d80d61d74889fc9aa48916d9397a6148f5c5d11247b06feb94f70eda 
+
+ descadastre-se
+  
+
+
+  
+
+
+
+
+ 
+ 
+
+
+  
+ 
+
+
+--i5rLvXoar2Ha=_?:
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+      ReadMsgBody{ width: 100%;}
+      .ExternalClass {width: 100%;}
+      .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+      body {-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;margin:0 !important;}
+      p { margin: 1em 0;}
+      table td { border-collapse: collapse;}
+      img {outline:0;}
+      a img {border:none;}
+      @-ms-viewport{ width: device-width;}
+    </style>
+    <style type="text/css">
+      @media only screen and (max-width: 480px) {
+        .container {width: 100% !important;}
+        .footer { width:auto !important; margin-left:0; }
+        .mobile-hidden { display:none !important; }
+        .logo { display:block !important; padding:0 !important; }
+        img { max-width:100% !important; height:auto !important; max-height:auto !important;}
+        .header img{max-width:100% !important;height:auto !important; max-height:auto !important;}
+        .photo img { width:100% !important; max-width:100% !important; height:auto !important;}
+        .drop { display:block !important; width: 100% !important; float:left; clear:both;}
+        .footerlogo { display:block !important; width: 100% !important; padding-top:15px; float:left; clear:both;}
+        .nav4, .nav5, .nav6 { display: none !important; }
+        .tableBlock {width:100% !important;}
+        .responsive-td {width:100% !important; display:block !important; padding:0 !important; }
+        .fluid, .fluid-centered {
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        .fluid-centered {
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        /* MOBILE GLOBAL STYLES - DO NOT CHANGE */
+        body { padding: 0px !important; font-size: 16px !important; line-height: 150% !important;}
+        h1 { font-size: 22px !important; line-height: normal !important;}
+        h2 { font-size: 20px !important; line-height: normal !important;}
+        h3 { font-size: 18px !important; line-height: normal !important;}
+        .buttonstyles {
+          font-family:arial,helvetica,sans-serif !important;
+          font-size: 16px !important;
+          color: #FFFFFF !important;
+          padding: 10px !important;
+        }
+        /* END OF MOBILE GLOBAL STYLES - DO NOT CHANGE */
+      }
+      @media only screen and (max-width: 640px) {
+        .container { width:100% !important; }
+        .mobile-hidden { display:none !important; }
+        .logo { display:block !important; padding:0 !important; }
+        .photo img { width:100% !important; height:auto !important;}
+        .nav5, .nav6 { display: none !important;}
+        .fluid, .fluid-centered {
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        .fluid-centered {
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+      }
+    </style>
+    <!--[if mso]>       <style type="text/css">           /* Begin Outlook Font Fix */           body, table, td {               font-family: Arial, Helvetica, sans-serif ;               font-size:16px;               color:#000000;               line-height:1;           }           /* End Outlook Font Fix */       </style>     <![endif]-->
+  </head>
+  <body bgcolor="#ffffff" text="#000000" style="background-color: #ffffff; color: #000000; padding: 0px; -webkit-text-size-adjust:none; font-size: 16px; font-family:arial,helvetica,sans-serif;"><style type="text/css">
+div.preheader 
+{ display: none !important; } 
+</style>
+<div class="preheader" style="font-size: 1px; display: none !important;">Seleção com os queridinhos para você.</div>
+    <div style="font-size:0; line-height:0;"><img src="https://click.mail.e.cea.com.br/open.aspx?ffcb10-fed0157176650078-fe57127570620d797115-fe3111727364047d7c1074-ff3215737d65-fe551373736d05757413-ff051674756507&d=120004&bmt=0" width="1" height="1" alt=""></div>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+      <tr>
+        <td align="center" valign="top">
+           
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <table cellspacing="0" cellpadding="0" border="0" width="600" class="container" align="center">
+            <tr>
+              <td>
+                <table class="tb_properties border_style" style="background-color:#FFFFFF;" cellspacing="0" cellpadding="0" bgcolor="#ffffff" width="100%">
+                  <tr>
+                    <td align="center" valign="top">
+                      <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                          <!-- added padding here -->
+                          <td class="content_padding" style="">
+                            <!-- end of comment -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tr> <!-- top slot -->
+                                <td align="center" class="header" valign="top">
+                                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                          <td align="left" valign="top">
+                                            <table cellspacing="0" cellpadding="0" style="width:100%">
+                                              <tbody>
+                                              <tr>
+                                                <td class="responsive-td" valign="top" style="width: 100%;">
+                                                  <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table cellpadding="0" cellspacing="0" width="100%" role="presentation" class="stylingblock-content-wrapper" style="min-width: 100%; "><tr><td class="stylingblock-content-margin-cell" style="padding: 3px; "><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 0px; " class="stylingblock-content-wrapper camarker-inner"><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><!--[if mso]>
+<table width="600" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td align="center" valign="top"><![endif]-->
+<table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="max-width:600px" bgcolor="#FFFFFF">
+ 
+ 
+ <!-- HEADER -->
+    <tr>
+  <td align="center" valign="top" bgcolor="#FFFFFF" style="padding: 15px 40px 0px">
+   <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+    <tr>
+     <td align="left" valign="middle" style="font-family:arial; font-size:14px; color:#333333; text-align:left;">
+                        <!-- LINK -->
+      <a href="https://view.mail.e.cea.com.br/?qs=c9198e9db91fc7ec35103eb6c8e4581b4ceb33e01f24fe1b003c5f220e7b8dfd580ad0622e6211e0496d387b89a1650d022e79f3156d411f76ed7b5c35c9a7af63d67e7d2f67721796cda186fc772edd" target="_blank" style="color: #C5C5C5; text-decoration: underline;">
+                        ver online
+                        </a>
+     </td>
+     <td align="right" valign="middle" style="font-family:arial; font-size:14px; color:#333333; text-align:right;">
+                        <!-- LINK -->
+      <a href="https://click.mail.e.cea.com.br/unsub_center.aspx?qs=4dadf90d9a3d03f9668ae23d53a35ec1b18420f6f1fd38ff59aa12396109e98f96cfe8f368efe18a361107f9d80d61d74889fc9aa48916d9587222382b541642669a9719dab4e856" target="_blank" style="color: #C5C5C5; text-decoration: underline;">
+                        descadastre-se
+      </a>
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+    <tr>
+        <td align="center" valign="top" style="padding: 15px 0px 0px">
+            <!-- LINK -->
+            <a href="https://click.mail.e.cea.com.br/?qs=c00371af77de84902cf076d17e13d8a54d1443f423b10e4dd1f522d5ed526a05888bd06cca1e0be4988b2e800b0babdfcd781b5494150b744d8bf95d330cbb3a" target="_blank" >
+            <!-- IMAGEM -->    
+            <img src="https://s3.amazonaws.com/appb2c-pages/email/HEADER%20E%20FOOTER/ceaevc/novo/header/logo_ceaevc.png" width="400" style="width:400px; max-width:100%; display:block; border-radius: 8px;" border="0" alt="C&amp;A&amp;VC">
+            </a>    
+        </td>
+    </tr>
+    <tr>
+        <td align="center" valign="top" style="padding: 15px 10px 15px">
+            <!-- IMAGEM -->    
+            <img src="https://s3.amazonaws.com/appb2c-pages/email/HEADER%20E%20FOOTER/ceaevc/novo/header/header_curte.png" width="425" style="width:425px; max-width:100%; display:block; border-radius: 8px;" border="0" alt="C&amp;A&amp;VC">
+            <!-- IMAGEM -->
+        </td>
+    </tr>
+ <!-- HEADER --></table></td></tr></table>
+       
+
+
+ 
+
+</td></tr></table></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">    <!-- MACRO BANNER -->
+ 
+        
+            <!-- LINK -->
+            <a href="https://click.mail.e.cea.com.br/?qs=fb4c897e0ad4a82eae12effb269b308e7ce4a11a0ec1a5b6ae7de7f118c151828de3b0cc852b8738eca538fab1c4599473170dd59daa591619a62e4c41afa267" target="_blank" >
+            <!-- IMAGEM -->    
+            <img src="https://appb2c-pages.s3.amazonaws.com/email/2022/05_maio/20220518/20220518_Faixa_C%26APay.jpg" width="600" style="width:600px; max-width:100%; display:block;" border="0" alt="Pague com C&amp;A Pay: é digital, gratuito e sem anuidade.">
+            <!-- IMAGEM -->     
+            </a>
+            <!-- LINK -->
+        
+    
+ <!-- MACRO BANNER --></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"> <!-- MACRO BANNER -->
+ 
+        
+            <!-- LINK -->
+            <a href="https://click.mail.e.cea.com.br/?qs=fb4c897e0ad4a82ee87c436d60f806002ef950022da26ebf0dc279b1bc1b3782dbd8450342508922c53934f20f16d71eea6194dafa7e984522229aa0600c4b3f" target="_blank" >
+            <!-- IMAGEM -->    
+            <img src="https://appb2c-pages.s3.amazonaws.com/email/2022/06_junho/20220615/20220616_Masculino_01.jpg" width="600" style="width:600px; max-width:100%; display:block;" border="0" alt="Estilo da cabeça aos pés">
+            <!-- IMAGEM -->     
+            </a>
+            <!-- LINK -->
+        
+    
+ <!-- MACRO BANNER -->
+    
+    <br>
+    
+    <!-- TEXTO 1 -->
+    
+        
+            <!--[if mso]><table width="500" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td align="center" valign="top"><![endif]-->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="max-width:500px">
+                <tr>
+                    <!-- TEXTO -->
+                    <td align="center" valign="top" style="font-family: Century Gothic, sans-serif; font-weight: 300; font-size: 15px; color: #1D1E2C; text-align: center; line-height: 18px;">
+                        Atualize o seu armário com as <strong>peças-tendência</strong> da temporada! Dos bonés até os calçados, o <strong>melhor da moda para você</strong> escolher os seus favoritos e arrasar por aí.
+                    </td>    
+                    <!-- TEXTO -->
+                </tr>
+            </table>
+            <!--[if mso]></td></tr></table><![endif]-->
+        
+     
+    <!-- TEXTO 1 -->
+    
+    
+    <br>
+    
+    <!-- BANNER DUPLO -->
+    
+        
+            <!--[if mso]><table width="600" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td align="center" valign="top"><![endif]-->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="max-width: 600px; vertical-align: top; display: inline-table;">
+                <tr>
+                    <td align="center" valign="top" style="padding: 5px 5px">
+                        <!-- LINK -->
+                        <a href="https://click.mail.e.cea.com.br/?qs=fb4c897e0ad4a82eb96779411d89f1c6031fa3dc681bb5a5f80d4e77706a812f77192a0352c9ca740495f9e773e00de512cc578cdc336d6887c3dcb6a4c18bc1" target="_blank" >
+                        <!-- IMAGEM-->    
+                        <img src="https://appb2c-pages.s3.amazonaws.com/email/2022/06_junho/20220615/20220616_Masculino_02.jpg" width="280" style="width:280px; max-width:100%; display:block; " border="0" alt="Manga longa">
+                        <!-- IMAGEM -->    
+                        </a>
+                        <!-- LINK -->
+                    </td>
+
+                    <td align="center" valign="top" style="padding: 5px 5px">
+                        <!-- LINK -->
+                        <a href="https://click.mail.e.cea.com.br/?qs=fb4c897e0ad4a82ec171a7e450484c709eedc9c3518e413eb327d18b972a48467eff293039a0b604104ea056fd050b287af8fcaddc6874381981cdbfecdb163d" target="_blank" >
+                        <!-- IMAGEM -->    
+                        <img src="https://appb2c-pages.s3.amazonaws.com/email/2022/06_junho/20220615/20220616_Masculino_03.jpg" width="280" style="width:280px; max-width:100%; display:block; " border="0" alt="Sapatenis">
+                        <!-- IMAGEM -->    
+                        </a>
+                        <!-- LINK -->
+                    </td>
+                </tr>
+            </table>
+            <!--[if mso]></td></tr></table><![endif]-->
+        
+     
+    
+        
+            <!--[if mso]><table width="580" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td align="center" valign="top"><![endif]-->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="max-width: 580px; vertical-align: top; display: inline-table;">
+                <tr>
+                    <!-- TEXTO -->
+                    <td align="center" valign="top" style="font-family: Century Gothic, sans-serif; font-weight: 300; font-size: 15px; color: #1D1E2C; text-align: center; line-height: 18px; width:250px; max-width:100%; padding: 0px 20px;">
+                       Estilosa e necessária para os dias frios.
+                    </td>
+                   <!-- TEXTO -->
+                    <td align="center" valign="top" style="font-family: Century Gothic, sans-serif; font-weight: 300; font-size: 15px; color: #1D1E2C; text-align: center; line-height: 18px; width:250px; max-width:100%; padding: 0px 20px;">
+                        Opções modernas para sair do básico.
+                    </td>
+                    <!-- TEXTO -->
+                </tr>
+            </table>
+<br>
+            <!--[if mso]></td></tr></table><![endif]-->
+        
+    
+    <!-- BANNER DUPLO -->
+    
+    <br>
+    
+    <!-- BANNER DUPLO -->
+    
+        
+            <!--[if mso]><table width="600" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td align="center" valign="top"><![endif]-->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="max-width: 600px; vertical-align: top; display: inline-table;">
+                <tr>
+                    <td align="center" valign="top" style="padding: 5px 5px">
+                        <!-- LINK -->
+                        <a href="https://click.mail.e.cea.com.br/?qs=c00371af77de8490bb872602a2d911e983d167cc64ec939994cc54d4770365295ed42aeada7dbe8e64bb0d1d5b45b16470872fb3ffbc2415807522de222231f4" target="_blank" >
+                        <!-- IMAGEM-->    
+                        <img src="https://appb2c-pages.s3.amazonaws.com/email/2022/06_junho/20220615/20220616_Masculino_04.jpg" width="280" style="width:280px; max-width:100%; display:block; " border="0" alt="Calças de moletom">
+                        <!-- IMAGEM -->    
+                        </a>
+                        <!-- LINK -->
+                    </td>
+
+                    <td align="center" valign="top" style="padding: 5px 5px">
+                        <!-- LINK -->
+                        <a href="https://click.mail.e.cea.com.br/?qs=c00371af77de84905aeaa38ef70ed5c528ba84ee5bf1679a3f5202ae307cc320706f670c47e1b6cd3b2cd39c1d463900b2450307bc63578fba7c7ea824323a16" target="_blank" >
+                        <!-- IMAGEM -->    
+                        <img src="https://appb2c-pages.s3.amazonaws.com/email/2022/06_junho/20220615/20220616_Masculino_05.jpg" width="280" style="width:280px; max-width:100%; display:block; " border="0" alt="Tênis Branco">
+                        <!-- IMAGEM -->    
+                        </a>
+                        <!-- LINK -->
+                    </td>
+                </tr>
+            </table>
+            <!--[if mso]></td></tr></table><![endif]-->
+        
+     
+    
+        
+            <!--[if mso]><table width="580" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td align="center" valign="top"><![endif]-->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="max-width: 580px; vertical-align: top; display: inline-table;">
+                <tr>
+                    <!-- TEXTO -->
+                    <td align="center" valign="top" style="font-family: Century Gothic, sans-serif; font-weight: 300; font-size: 15px; color: #1D1E2C; text-align: center; line-height: 18px; width:250px; max-width:100%; padding: 0px 20px;">
+                        Tendência e conforto para o seu armário.
+                    </td>
+                   <!-- TEXTO -->
+                    <td align="center" valign="top" style="font-family: Century Gothic, sans-serif; font-weight: 300; font-size: 15px; color: #1D1E2C; text-align: center; line-height: 18px; width:250px; max-width:100%; padding: 0px 20px;">
+                        O clássico que combina com tudo.
+                    </td>
+                    <!-- TEXTO -->
+                </tr>
+            </table>
+<br>
+            <!--[if mso]></td></tr></table><![endif]-->
+        
+    
+    <!-- BANNER DUPLO -->
+    
+    <br>
+    
+    <!-- BANNER DUPLO -->
+    
+        
+            <!--[if mso]><table width="600" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td align="center" valign="top"><![endif]-->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="max-width: 600px; vertical-align: top; display: inline-table;">
+                <tr>
+                    <td align="center" valign="top" style="padding: 5px 5px">
+                        <!-- LINK -->
+                        <a href="https://click.mail.e.cea.com.br/?qs=c00371af77de84900159d474541e9154cfce1e5b76b34050dfbc940d650d38815399603ccc37506ff2959e0196b732dd7e2f6b14aacb127f1748c8602d2133dc" target="_blank" >
+                        <!-- IMAGEM-->    
+                        <img src="https://appb2c-pages.s3.amazonaws.com/email/2022/06_junho/20220615/20220616_Masculino_06.jpg" width="280" style="width:280px; max-width:100%; display:block; " border="0" alt="ACE By C&amp;A">
+                        <!-- IMAGEM -->    
+                        </a>
+                        <!-- LINK -->
+                    </td>
+
+                    <td align="center" valign="top" style="padding: 5px 5px">
+                        <!-- LINK -->
+                        <a href="https://click.mail.e.cea.com.br/?qs=c00371af77de8490ae5504797abf6f159d772edd3f41a970caed1d0076b5eb597cd1932a8b83b41c9231514245067e464bdacaff9e59fbd805d17c5900c4d53f" target="_blank" >
+                        <!-- IMAGEM -->    
+                        <img src="https://appb2c-pages.s3.amazonaws.com/email/2022/06_junho/20220615/20220616_Masculino_07.jpg" width="280" style="width:280px; max-width:100%; display:block; " border="0" alt="Tênis esportivo">
+                        <!-- IMAGEM -->    
+                        </a>
+                        <!-- LINK -->
+                    </td>
+                </tr>
+            </table>
+<br>
+            <!--[if mso]></td></tr></table><![endif]-->
+        
+     
+    
+        
+            <!--[if mso]><table width="580" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td align="center" valign="top"><![endif]-->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="max-width: 580px; vertical-align: top; display: inline-table;">
+                <tr>
+                    <!-- TEXTO -->
+                    <td align="center" valign="top" style="font-family: Century Gothic, sans-serif; font-weight: 300; font-size: 15px; color: #1D1E2C; text-align: center; line-height: 18px; width:250px; max-width:100%; padding: 0px 20px;">
+                        Peças esportivas perfeitas para quem ama se movimentar.
+                    </td>
+                   <!-- TEXTO -->
+                    <td align="center" valign="top" style="font-family: Century Gothic, sans-serif; font-weight: 300; font-size: 15px; color: #1D1E2C; text-align: center; line-height: 18px; width:250px; max-width:100%; padding: 0px 20px;">
+                        Dê um gás no seu treino com o calçado certo.
+                    </td>
+                    <!-- TEXTO -->
+                </tr>
+            </table>
+<br>
+            <!--[if mso]></td></tr></table><![endif]-->
+        
+    
+    <!-- BANNER DUPLO -->
+   
+    <br>
+    
+    <!-- BANNER 1 -->
+    
+        
+            <!-- LINK -->
+            <a href="https://click.mail.e.cea.com.br/?qs=c00371af77de8490587d22c7d1051728bdb49b1f06492da587a8065afd86b39c4362b6b267ccd1907d9394721864c72bffb04efc7e769865fccc305ac6aef532" target="_blank" >
+            <!-- IMAGEM -->    
+            <img src="https://appb2c-pages.s3.amazonaws.com/email/2022/06_junho/20220615/20220616_Masculino_08.jpg" width="600" style="width:600px; max-width:100%; display:block;" border="0" alt="Acessórios">
+            <!-- IMAGEM -->     
+            </a>
+            <!-- LINK -->
+        
+    
+ <!-- BANNER 1 -->
+    
+    <br>
+    
+    <!-- TEXTO 2 -->
+    
+        
+            <!--[if mso]><table width="500" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td align="center" valign="top"><![endif]-->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="max-width:500px">
+                <tr>
+                    <!-- TEXTO -->
+                    <td align="center" valign="top" style="font-family: Century Gothic, sans-serif; font-weight: 300; font-size: 15px; color: #1D1E2C; text-align: center; line-height: 18px;">
+                        Para deixar o seu look ainda mais estiloso.
+                    </td>    
+                    <!-- TEXTO -->
+                </tr>
+            </table>
+            <!--[if mso]></td></tr></table><![endif]-->
+        
+     
+    <!-- TEXTO 2 -->
+    
+    <br>
+    
+    <!-- BANNER 2 -->
+    
+        
+            <!-- LINK -->
+            <a href="https://click.mail.e.cea.com.br/?qs=c00371af77de8490ac543b5e53eb2f5077f0fe1839dcd7e374a45e5066d1e4a9d9ece5f66648c41ee11e220b41e2f92df778a3ea9c0221afda37efd63e13235e" target="_blank" >
+            <!-- IMAGEM -->    
+            <img src="https://appb2c-pages.s3.amazonaws.com/email/2022/06_junho/20220615/20220616_Masculino_09.jpg" width="600" style="width:600px; max-width:100%; display:block;" border="0" alt="Galeria C&amp;A: Pijama e Moda Íntima Masculina">
+            <!-- IMAGEM -->     
+            </a>
+            <!-- LINK -->
+        
+    
+ <!-- BANNER 2 -->
+    
+    <br></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="max-width: 600px; vertical-align: top; display: inline-table;">
+<!--[if mso]><table width="600" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td align="center" valign="top"><![endif]-->
+</table><table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="max-width: 600px; vertical-align: top; display: inline-table;">
+<tr align="center">
+<td align="center" valign="top" style="padding: 30px 0px 0px">
+<!--[if mso]><table width="500" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td align="center" valign="top"><![endif]-->
+<table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="max-width: 500px; vertical-align: top;">
+
+<!--[if mso]><table width="600" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td align="center" valign="top"><![endif]-->
+            </table>
+<!--[if mso]><table width="600" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td align="center" valign="top"><![endif]-->
+ <!-- FOOTER -->
+  
+    <!-- TEXTO -->
+    
+        
+            <!--[if mso]><table width="600" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td align="center" valign="top"><![endif]-->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="max-width:600px" bgcolor="#F0F0F0">
+                <tr>
+                    <td align="center" valign="top" style="font-family: Century Gothic, sans-serif; font-weight: 300; font-size: 25px; color: #1D1E2C; text-align:center; line-height:28px; padding: 30px 0px 10px">
+                       Só quem é <strong>CURTE</strong> tem:
+                    </td>
+                </tr>
+            </table>
+            <!--[if mso]></td></tr></table><![endif]-->
+        
+    
+    <!-- TEXTO -->
+    
+    <!-- NÍVEL -->
+    
+        
+            <!--[if mso]><table width="600" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td align="center" valign="top"><![endif]-->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="max-width:600px" bgcolor="#F0F0F0">
+                <tr>
+                    <td align="center" valign="top" style="padding: 15px 10px 10px;">
+                        <img src="https://s3.amazonaws.com/appb2c-pages/email/HEADER%20E%20FOOTER/ceaevc/novo/banner_niveis/curte/footer_curte.png" width="400" style="width:400px; max-width:100%; display:block; border-radius: 8px;" border="0" alt="#">
+                    </td>    
+                </tr>
+            </table>
+            <!--[if mso]></td></tr></table><![endif]-->
+        
+    
+    
+        
+            <!--[if mso]><table width="600" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td align="center" valign="top"><![endif]-->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="max-width: 600px; vertical-align: top; display: inline-table;" bgcolor="#F0F0F0">
+                <tr>
+                    <td align="center" valign="top" style="padding: 0px 10px 0px">
+                        <!--[if mso]><table width="450" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td align="center" valign="top"><![endif]-->
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" align="0" style="max-width: 450px; display: inline-table;" bgcolor="#F0F0F0">
+                            <tr>
+                                <td align="center" valign="top" style="padding: 5px 10px">
+                                    <!-- IMAGEM -->    
+                                    <img src="https://s3.amazonaws.com/appb2c-pages/email/HEADER%20E%20FOOTER/ceaevc/novo/banner_niveis/curte/curte_01.png" width="50" style="width:50px; max-width:100%; display:block; border-radius: 10px;" border="0" alt="10% OFF na próxima compra">
+                                    <!-- IMAGEM -->    
+                                </td>
+
+                                <td align="center" valign="top" style="padding: 5px 10px">
+                                    <!-- IMAGEM -->    
+                                    <img src="https://s3.amazonaws.com/appb2c-pages/email/HEADER%20E%20FOOTER/ceaevc/novo/banner_niveis/curte/curte_02.png" width="50" style="width:50px; max-width:100%; display:block; border-radius: 10px;" border="0" alt="Pré-venda antecipada">
+                                    <!-- IMAGEM -->    
+                                </td>
+
+                                <td align="center" valign="top" style="padding: 5px 10px">
+                                    <!-- IMAGEM -->    
+                                    <img src="https://s3.amazonaws.com/appb2c-pages/email/HEADER%20E%20FOOTER/ceaevc/novo/banner_niveis/curte/curte_03.png" width="50" style="width:50px; max-width:100%; display:block; border-radius: 10px;" border="0" alt="Preços especiais">
+                                    <!-- IMAGEM -->    
+                                </td>
+
+                                <td align="center" valign="top" style="padding: 5px 10px">
+                                    <!-- IMAGEM -->    
+                                    <img src="https://s3.amazonaws.com/appb2c-pages/email/HEADER%20E%20FOOTER/ceaevc/novo/banner_niveis/curte/curte_04.png" width="50" style="width:50px; max-width:100%; display:block; border-radius: 10px;" border="0" alt="Surpresa no seu aniversário">
+                                    <!-- IMAGEM -->    
+                                </td>
+
+                            </tr>
+                         </table>
+                        <!--[if mso]></td></tr></table><![endif]-->
+                    </td>
+                </tr>
+            </table>
+            <!--[if mso]></td></tr></table><![endif]-->
+        
+    
+    
+        
+            <!--[if mso]><table width="600" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td align="center" valign="top"><![endif]-->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="max-width: 600px; vertical-align: top; display: inline-table;" bgcolor="#F0F0F0">
+                <tr>
+                    <td align="center" valign="top" style="padding: 0px 10px 10px">
+                        <!--[if mso]><table width="450" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td align="center" valign="top"><![endif]-->
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" align="0" style="max-width: 450px; display: inline-table;" bgcolor="#F0F0F0">
+                            <tr>
+                                <!-- TEXTO -->
+                                <td align="center" valign="top" style="font-family: Century Gothic, sans-serif; font-weight: 300; font-size: 10px; color: #1D1E2C; text-align: center; line-height: 13px; width: 80px; max-width:100%;">
+                                   <strong> 10% OFF</strong> na <br>primeira compra
+                                </td>
+
+                                <!-- TEXTO -->
+                                <td align="center" valign="top" style="font-family: Century Gothic, sans-serif; font-weight: 300; font-size: 10px; color: #1D1E2C; text-align: center; line-height: 13px; width: 80px; max-width:100%;">
+                                    <strong>Pré-venda</strong> <br>antecipada
+                                </td>
+
+                                <!-- TEXTO -->
+                                <td align="center" valign="top" style="font-family: Century Gothic, sans-serif; font-weight: 300; font-size: 10px; color: #1D1E2C; text-align: center; line-height: 13px; width: 80px; max-width:100%;">
+                                    Preços <br><strong>especiais</strong>
+                                </td>
+                                
+                                <!-- TEXTO -->
+                                <td align="center" valign="top" style="font-family: Century Gothic, sans-serif; font-weight: 300; font-size: 10px; color: #1D1E2C; text-align: center; line-height: 13px; width: 80px; max-width:100%;">
+                                    Surpresa no <strong>seu <br>aniversário</strong>
+                                </td>
+
+                            </tr>
+                         </table>
+                        <!--[if mso]></td></tr></table><![endif]-->
+                    </td>
+                </tr>
+            </table>
+            <!--[if mso]></td></tr></table><![endif]-->
+        
+    
+    
+        
+            <!--[if mso]><table width="600" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td align="center" valign="top"><![endif]-->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="max-width: 600px; vertical-align: top; display: inline-table;" bgcolor="#F0F0F0">
+                <tr>
+                    <td align="center" valign="top" style="padding: 0px 10px 0px">
+                        <!--[if mso]><table width="450" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td align="center" valign="top"><![endif]-->
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" align="0" style="max-width: 450px; display: inline-table;" bgcolor="#F0F0F0">
+                            <tr>
+
+                                <td align="center" valign="top" style="padding: 5px 10px">
+                                    <!-- IMAGEM -->    
+                                    <img src="https://s3.amazonaws.com/appb2c-pages/email/HEADER%20E%20FOOTER/ceaevc/novo/banner_niveis/curte/curte_05.png" width="50" style="width:50px; max-width:100%; display:block; border-radius: 10px;" border="0" alt="Curadoria de moda exclusiva">
+                                    <!-- IMAGEM -->    
+                                </td>
+
+                                <td align="center" valign="top" style="padding: 5px 10px">
+                                    <!-- IMAGEM -->    
+                                    <img src="https://s3.amazonaws.com/appb2c-pages/email/HEADER%20E%20FOOTER/ceaevc/novo/banner_niveis/curte/curte_06.png" width="50" style="width:50px; max-width:100%; display:block; border-radius: 10px;" border="0" alt="Fila expressa no caixa">
+                                    <!-- IMAGEM -->    
+                                </td>
+
+                                <td align="center" valign="top" style="padding: 5px 10px">
+                                    <!-- IMAGEM -->    
+                                    <img src="https://s3.amazonaws.com/appb2c-pages/email/HEADER%20E%20FOOTER/ceaevc/novo/banner_niveis/curte/curte_07.png" width="50" style="width:50px; max-width:100%; display:block; border-radius: 10px;" border="0" alt="Provadir com até 18 peças">
+                                    <!-- IMAGEM -->    
+                                </td>
+
+                                <td align="center" valign="top" style="padding: 5px 10px">
+                                    <!-- IMAGEM -->    
+                                    <img src="https://s3.amazonaws.com/appb2c-pages/email/HEADER%20E%20FOOTER/ceaevc/novo/banner_niveis/curte/curte_08.png" width="50" style="width:50px; max-width:100%; display:block; border-radius: 10px;" border="0" alt="Caixa de presente grátis">
+                                    <!-- IMAGEM -->    
+                                </td>
+                            </tr>
+                         </table>
+                        <!--[if mso]></td></tr></table><![endif]-->
+                    </td>
+                </tr>
+            </table>
+            <!--[if mso]></td></tr></table><![endif]-->
+        
+    
+    
+        
+            <!--[if mso]><table width="600" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td align="center" valign="top"><![endif]-->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="max-width: 600px; vertical-align: top; display: inline-table;" bgcolor="#F0F0F0">
+                <tr>
+                    <td align="center" valign="top" style="padding: 0px 10px 10px">
+                        <!--[if mso]><table width="450" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td align="center" valign="top"><![endif]-->
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" align="0" style="max-width: 450px; display: inline-table;" bgcolor="#F0F0F0">
+                            <tr>
+                                
+                                <!-- TEXTO -->
+                                <td align="center" valign="top" style="font-family: Century Gothic, sans-serif; font-weight: 300; font-size: 9px; color: #AAAAAA; text-align: center; line-height: 13px; width: 80px; max-width:100%;">
+                                    Curadoria de moda <br><strong>exclusiva</strong>
+                                </td>
+
+                                <!-- TEXTO -->
+                                <td align="center" valign="top" style="font-family: Century Gothic, sans-serif; font-weight: 300; font-size: 9px; color: #AAAAAA; text-align: center; line-height: 13px; width: 80px; max-width:100%;">
+                                    <strong>Fila expressa</strong> <br>no caixa
+                                </td>
+
+                                <!-- TEXTO -->
+                                <td align="center" valign="top" style="font-family: Century Gothic, sans-serif; font-weight: 300; font-size: 9px; color: #AAAAAA; text-align: center; line-height: 13px; width: 80px; max-width:100%;">
+                                    Provador com <strong>até <br>18 peças</strong>
+                                </td>
+
+                                <!-- TEXTO -->
+                                <td align="center" valign="top" style="font-family: Century Gothic, sans-serif; font-weight: 300; font-size: 9px; color: #AAAAAA; text-align: center; line-height: 13px; width: 80px; max-width:100%;">
+                                    Caixa de presente <br><strong>grátis</strong>
+                                </td>
+                            </tr>
+                         </table>
+                        <!--[if mso]></td></tr></table><![endif]-->
+                    </td>
+                </tr>
+            </table>
+            <!--[if mso]></td></tr></table><![endif]-->
+        
+    
+    <!-- NÍVEL -->
+    
+    <!-- TEXTO LEGAL -->
+ 
+  
+   <!--[if mso]><table width="600" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td align="center" valign="top"><![endif]-->
+   <table width="100%" cellpadding="0" cellspacing="0" border="0" align="0" style="max-width: 600px;" bgcolor="#F0F0F0">
+    <tr>
+     <td align="center" valign="top" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; color:#000000; text-align: justify; line-height: 18px; padding: 20px 20px 30px">
+        
+                                                                                                
+                                                                                                
+                                                                                                
+                                                                                                
+                                                                                                
+                                                                                                
+                                                                                                
+                                                                                                
+                                                                                                
+                                                                                                <br><br>
+                        Para receber os nossos comunicados na caixa de entrada adicione o e-mail <a href="mailto:cea@mail.e.cea.com.br" style="color: #000000; font-weight: bold; text-decoration: none;">cea@mail.e.cea.com.br</a> em sua lista de remetentes confiáveis.
+      <br><br>• Promoção válida por prazo indeterminado. Na compra em nossas lojas físicas e/ou em nosso site <a href="https://click.mail.e.cea.com.br/?qs=c00371af77de84901491a2faf673b550e4640277785476784bd908539d9fe26c70c8b8eb6aec8ddcf35eff408300a7e33d4f431286a030ed5bc8fa7a1dcd5956" target="_blank" style="color: #000000; font-weight: bold; text-decoration: none;">(cea.com.br)
+</a>, para cada múltiplo de R$ 50,00 (cinquenta reais) o cliente ganhará um lik&. Os valores excedentes da compra não múltiplos de R$ 50,00 (cinquenta reais) não serão pontuados e, também, não podem ser cumulados a próxima compra. Os descontos concedidos pelo programa não serão legítimos para compra de eletrônicos, óculos, produtos de beleza, marketplace, recarga de celular, compra de cartão presente, e uso para compra de produto em promoção; não cumulativa com outras promoções. Associado C&A participante da campanha não é elegível para qualquer benefício de desconto. Benefício pessoal e intransferível. O crédito de lik&s estará disponível no prazo de 72 (setenta e duas) horas após o faturamento da compra. Os lik&s terão validade de 12 (doze) meses a contar da data de aquisição. É de
+ responsabilidade do cliente <strong>informar o CPF durante suas compras para acúmulo de lik&s</strong>, não sendo possível fazê-lo de forma retroativa.
+                        
+                        <br><br>• Consulte condições de utilização do desconto de Boas-Vindas, Caixa de Presente e Aniversário no Regulamento em nosso site <a href="https://click.mail.e.cea.com.br/?qs=c00371af77de84901537a94a6691c52dd8307b83704c7b103b732b5688e2094af2cec9da163246973dde36d3303d7a5d1202206aa348a67ef6ebcc1b3e086a22" target="_blank" style="color: #000000; font-weight: bold; text-decoration: none;">www.cea.com.br/evc</a>. O uso do desconto deve ser feito em totalidade. Os descontos concedidos pelo programa não serão legítimos para compra de eletrônicos, óculos, produtos de beleza, marketplace, recarga de celular, compra de cartão presente, e uso para compra de produto em promoção; e não disponível para empregado C&A. <strong>Benefício pessoal e intransferível.</strong>
+                        
+                        <br><br><strong>Fale Conosco</strong>
+                        <br>Sugestão, comentário ou dúvida sobre a C&A ou produtos e serviços? Fale Conosco pelo e-mail <a href="mailto:faleconosco@cea.com.br" style="color: #000000; font-weight: bold; text-decoration: none;">faleconosco@cea.com.br</a> ou telefone, no (11) 4571-2960. Atendemos de segunda a sábado, das 9h às 21h.
+              
+         <br><br><strong> Prazos e Entregas</strong>  <br>
+O prazo para entrega contempla estoque, região, processo de emissão da nota fiscal e o tempo de separação do produto. Nosso prazo é contado a partir do dia útil seguinte a sua confirmação de pagamento e dados cadastrais. As entregas são feitas de segunda a sexta-feira, das 9h às 21h.
+<br><br>
+       <strong>Frete Grátis</strong><br>
+Calculamos seu frete automaticamente, de acordo com a região de entrega do pedido. Frete grátis para Sul, Sudeste (Capital e Interior ) para valores acima de R$150,00 em compras no site. Frete grátis para Nordeste e Centro Oeste (Capital e Interior) para valores acima de R$200,00 em compras no site. Frete grátis para Norte (Capital e Interior) para valores acima de R$250,00 em compras no site. Consulte seu CEP no momento da compra.
+<br><br>
+       <strong>Preços e promoções</strong><br>
+Os preços dos produtos podem mudar sem aviso prévio e são válidos até o fim do estoque. Os produtos anunciados não incluem o valor do frete. Os descontos em valores de compra não estão ligados a descontos de frete. As fotos são meramente ilustrativas.
+
+                        <br><br>A C&A Modas Ltda. fica na Alameda Araguaia, 1222, Alphaville, Barueri - SP. Cep: 06455-000. Todas as suas informações pessoais são mantidas em confidencialidade no momento da compra. Veja nossa Política de Privacidade <a href="https://click.mail.e.cea.com.br/?qs=c00371af77de84902638e7a8fce618d114b24944aecd14580e381ff402d26808e6f081f4be3df65baeb196a68fd46dd6208d0c7e24c18fd0539348cafb3ce496" target="_blank" style="color: #000000; font-weight: bold; text-decoration: none;">aqui.</a>
+     </td>
+    </tr>
+   </table>
+   <!--[if mso]></td></tr></table><![endif]-->
+  
+ 
+    <!-- TEXTO LEGAL -->
+    
+    <!-- CADASTRO -->
+    
+  
+   <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+    <tr>
+     <td align="left" valign="middle" style="font-family:arial; font-size:14px; color:#333333; text-align:left;">
+                        <!-- LINK -->
+      <a href="https://view.mail.e.cea.com.br/?qs=c9198e9db91fc7ec35103eb6c8e4581b4ceb33e01f24fe1b003c5f220e7b8dfd580ad0622e6211e0496d387b89a1650d022e79f3156d411f76ed7b5c35c9a7af63d67e7d2f67721796cda186fc772edd" target="_blank" style="color: #C5C5C5; text-decoration: underline;">
+                        ver online
+                        </a>
+     </td>
+     <td align="right" valign="middle" style="font-family:arial; font-size:14px; color:#333333; text-align:right;">
+                        <!-- LINK -->
+      <a href="https://click.mail.e.cea.com.br/unsub_center.aspx?qs=4dadf90d9a3d03f9668ae23d53a35ec1b18420f6f1fd38ff59aa12396109e98f96cfe8f368efe18a361107f9d80d61d74889fc9aa48916d9587222382b541642669a9719dab4e856" target="_blank" style="color: #C5C5C5; text-decoration: underline;">
+                        descadastre-se
+      </a>
+     </td>
+    </tr>
+   </table>
+</td>
+</tr>
+</table>
+
+
+  
+ 
+    <!-- CADASTRO -->
+    
+    <!-- FOOTER -->
+  
+
+<!--[if mso]></td></tr></table><![endif]--></td></tr></table>
+       
+
+</td></tr></table></td></tr></table>
+												  
+                                                </td>
+                                              </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top">
+           
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+--i5rLvXoar2Ha=_?:--
+
